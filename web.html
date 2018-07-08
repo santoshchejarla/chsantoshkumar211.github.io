@@ -1,0 +1,355 @@
+<!DOCTYPE HTML>
+<!--
+	Binary by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Wiki - Web security</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="icon" type="image/png" href="images/bi0s-favicon.png" />
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="logo"><strong>bi0s-Wiki</strong> : Web exploitation</a>
+				<nav>
+					<a href="#menu">Menu</a>
+				</nav>
+			</header>
+
+		<!-- Nav -->
+		<nav id="menu">
+			<ul class="links">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="web.html">Web security</a></li>
+				<li><a href="cryptography.html">Cryptography</a></li>
+                <li><a href="reverse engineering.html">Reverse engineering</a></li>
+                <li><a href="binary.html">Binary exploitation</a></li>
+				<li><a href="forensics.html">Forensics</a></li>
+				<li><a href="android.html">Android</a></li>
+			</ul>
+		</nav>
+
+		<!-- Main -->
+			<section id="main">
+				<div class="inner">
+					<div class="image fit">
+						<img src="images/websecurity2.jpg" alt="" />
+					</div>
+					<header>
+
+		<!-- matter starts -->
+						<!--<h1>Web exploitation</h1>-->
+						<!--<p class="info">3 days ago by <a href="#">Jane Doe</a></p>-->
+					</header>
+					<h1 id="websecuritytrainingplan">Web Security Training plan</h1>
+
+<h3 id="1importanceoflearningdevelopment">1) <strong>Importance of learning development</strong>:</h3>
+
+<p>Before starting to focus on web security, learn to develop a web application from scratch using one of the development languages. This will really help you along your way. </p>
+
+<blockquote>
+  <p><strong>A person who knows how to develop things from ground can learn to break things effectively !</strong> </p>
+</blockquote>
+
+<p>Learn any of the development frameworks (I used to learn in PHP but it’s outdated now). You can use any of the following below:</p>
+
+<ul>
+<li>Python Django </li>
+
+<li>Ruby on Rails</li>
+
+<li>NodeJs</li>
+
+<li>PHP</li>
+</ul>
+
+<p>There are several others but I <strong>strongly</strong> suggest you start with one of the above. Learn it properly, how to develop complicated apps from ground using one of the above frameworks. The app should be a sort of an e-commerce platform. For the front end, there are several templates available online which you can reuse. Don’t waste too much time on front-end rather focus on the functionalities and back-end. 
+<br />
+<br />
+The Web application should have the following functionalities:</p>
+
+<ul>
+<li>Login page using PostgreSQL/MySQL in back end</li>
+
+<li>Products should be displayed in home page
+
+
+<ul>
+<li>Title,  where name should be displayed</li>
+
+<li>Description if possible</li>
+
+<li>Button for adding into cart</li></ul>
+</li>
+
+<li>Interactive page using JQuery and JavaScript (to buy products)
+
+
+<ul>
+<li>User should be able to add products to the cart</li>
+
+<li>Delete items from the cart</li>
+
+<li>Checkout page</li></ul>
+</li>
+
+<li>Profile page to  display the details of the user</li>
+
+<li>A logout button</li>
+</ul>
+
+<p>This will help you a lot.
+<br /></p>
+
+<h3 id="2letsgettosecurity">2) Let’s get to security !</h3>
+
+<p><br /></p>
+
+<p>I am assuming that you have very basic understanding of PHP/MySQL and JavaScript. Rest can be learned when you go through the syllabus: (I suggest you learn in the following order, complete 1 and go to 2.. )
+<br /><br /></p>
+
+<ul>
+<li><strong>SQL Injection</strong> - AUDI - 1’s SQLI labs (Video + Lab series)  -   9 Days max to complete
+
+
+<ul>
+<li>Lab Source code: https://github.com/Audi-1/sqli-labs</li>
+
+<li>Youtube videos: https://goo.gl/wPHuWa</li>
+
+<li>Practice Websites: <a href="los.eagle-jump.org">Lord of SQLi</a>, <a href="http://chall.tasteless.eu/">Tasteless Challenges</a>  (both the sites has extremely difficult challenges)</li></ul>
+</li>
+</ul>
+
+<p><br /></p>
+
+<ul>
+<li><p><strong>Cross Site Scripting</strong>: Introduction to XSS (video Series included)</p>
+
+<ul>
+<li><a href="https://www.youtube.com/watch?v=TKn5qdti66c">XSS Protection Bypass</a> webcast by Ashar Javed</li>
+
+<li><a href="https://www.youtube.com/watch?v=dWLpw-7_pa8">Bypassing Modern WAF's Exemplified At XSS</a> by Rafay Baloch</li>
+
+<li><a href="https://www.youtube.com/watch?v=LLtOJNeMp7c">Revisiting XSS Sanitization</a> by Ashar Javed</li>
+
+<li>Practice Websites: <a href="http://escape.alf.nu/">alert(1)</a>, <a href="http://prompt.ml/">prompt(1)</a>, <a href="https://github.com/cure53/XSSChallengeWiki/wiki/Older-Challenges-and-Write-Ups">XSS challenge Wiki</a></li>
+
+<li><a href="https://www.youtube.com/watch?v=JbfNWg6JS4U">Introduction to Content Security Policy</a></li>
+
+<li><a href="https://www.youtube.com/watch?v=LA9S9I4Co00">Bypassing Content Security Policy</a></li>
+
+<li><a href="https://www.youtube.com/watch?v=0beNcYpoP6A">Bypassing Content Security Policy 2</a> - OWASP</li>
+
+<li>Advanced XSS studies:
+
+
+<ul>
+<li><a href="https://www.youtube.com/channel/UCWg_fGwsOAL77wFBLMNBDcw">HTML5 Security Series</a> - 3 parts</li>
+
+<li>Security with AngularJS</li></ul>
+</li></ul></li>
+
+<li><p>Practice challenges: Practice is the key in solving more problems during a CTF. So try to solve as much as possible from the below sites (contains all type of web questions):</p>
+
+<ul>
+<li><a href="https://websec.fr">websec.fr</a></li>
+
+<li><a href="https://chall.stypr.com">Stypr challenges</a></li></ul></li>
+</ul>
+
+<p><br /></p>
+
+<h3 id="3howtoapproachaproblem">3) How to approach a problem:</h3>
+
+<p>There is a methodology is testing/recon a web challenge which can easily be automated in python. I have already written a script for this but I am not sharing it because I want all of you to write your own scripts for the same. Here are the steps:</p>
+
+<ul>
+<li><p>Look into the common places of interesting information. Some good places to check are:</p>
+
+<ul>
+<li>HTML source code</li>
+
+<li>Robots.txt</li>
+
+<li>HTTP response headers</li>
+
+<li>Cookies</li></ul></li>
+</ul>
+
+<p>Analyse these details to find out anything interesting is there. Most of the times, you will get interesting things out of these. Is there a hint in the source ? Is the application hiding some sensitive directories from search engines in robots.txt ? If cookies are encoded (base64 ?) then try decoding to find any juicy stuffs out.</p>
+
+<p><br /></p>
+
+<ul>
+<li><p>Before trying to exploit, see what the challenge is doing and understand it. Ask yourself these questions about the challenges:</p>
+
+<ul>
+<li>Is there any login/Register functionality ? Can we register a new account and login ? See what all functionalities can we do after logging in. Is there a password reset ?  Can we send message to admins/other users ?
+<br /><br /></li>
+
+<li>What is the main functionality of the challenge ? What is it trying to do ? In most cases, we need to abuse/exploit the main functionality to get flag.</li></ul></li>
+</ul>
+
+<p><br /></p>
+
+<ul>
+<li><p>If you get answers for all the above questions, now you know precisely how the application works. Now let’s try to exploit it:</p>
+
+<ul>
+<li><p>Identify all the places of userinput (login/register/password reset pages ?) <br /><br /></p></li>
+
+<li><p>Identify all GET/POST parameters which we can control. Identify the context of user inputs and parameters.<br /><br /></p></li>
+
+<li><p>Try exploiting it according to the context. </p>
+
+<ul>
+<li>For ex: a login page, most probably, there will be a database behind which fetches the username/pass. So if  vulnerability exist, it would most often be database exploitation or in other words sql injections !
+<br /><br /></li>
+
+<li>If it is a message sending functionality, most probably the message you send will be read by another user or an admin right ? So what if we can include javascript statements in our message which might get triggered when admins/users read the message ? or in other words, the possibility of an XSS is high here.</li></ul></li></ul></li>
+</ul>
+
+<p><br /></p>
+
+<ul>
+<li>Similarly understand all functionalities + contexts and see which vulnerability can occur with most probability. Your calculations will become more accurate when you solve more problems !</li>
+</ul>
+
+<blockquote>
+  <p>Do not blindly test applications without following the above steps. Learn and continue your each steps. Fuzzing with random payloads is not the way to play CTF.</p>
+</blockquote>
+
+<p><br /></p>
+
+<h3 id="4otherveryimportantthingstodo">4) Other very important things to do:</h3>
+
+<p>Technical skills are not the only important skill that you should have. Socialising with <strong>Good</strong> security researchers is very essentials for your growth. Other fellow researchers should know that you are also a passionate security guy who works hard. This will help you in getting good jobs, recognition etc. Make sure you follow whatever I said below which will help you get more publicity in the security community.</p>
+
+<ul>
+<li><p>Twitter account:</p>
+
+<ul>
+<li><p>Make sure you have a Twitter account. Most of the security researchers hangs around in twitter. Eg: Look at my twitter profile: <a href="https://twitter.com/a0xnirudh">a0xnirudh</a>
+<br /><br /></p></li>
+
+<li><p>Tweets should look good with valid hashtags + precise details. Use URL shortners like goo.gl to shorten big urls before sharing. Eg: <a href="https://twitter.com/0daylabs">0daylabs</a> - My blog twitter account.<br /><br /></p></li>
+
+<li><p>Retweet others tweet only if you believe it’s highly relevant. Don’t retweet simply without any logic !<br /><br /></p></li>
+
+<li><p><a href="https://twitter.com/a0xnirudh/lists/security-bugbounty-ctf">Security-Bugbounty-CTFs</a>: A twitter list that I am maintaining which contains the best security researchers who regularly tweets. Make sure you follow this list <strong>everyday</strong>. I repeat, everyday ! Keep this as your routine.</p></li></ul></li>
+</ul>
+
+<p><br /></p>
+
+<ul>
+<li><p>Personal Website: </p>
+
+<ul>
+<li><p>Create a good personal website in wordpress/github pages (I recommend github pages). You can learn about <a href="https://pages.github.com/">publishing a github page</a>. <a href="http://jekyllthemes.io/theme/14398159/dbyll">Dbyll</a> and <a href="http://jekyllthemes.io/theme/8068127/hyde">Hyde</a> is a very good personal jekyll themes to use.<br /><br /></p></li>
+
+<li><p>Managing a blog on your github will increase the number of contributions on your github profile too.<br /><br /></p></li>
+
+<li><p>Write technical contents only. No personal bullshits ! If you want to have write daily routine stuffs, create another blog (Why should others read your personal day to day things in the first place ? )<br /><br /></p></li>
+
+
+<li><p>The main things you can write in your blog which the security community reads will be:</p>
+
+<ul>
+<li><p><strong>CTF writeups</strong> (Very important)</p></li>
+
+<li><p><strong>Bug Bounty writeups</strong> (only quality bugs, no simple stuff that an automated scanner can find)</p></li>
+
+<li><p><strong>Paper critiques</strong> (Read quality papers and put a write up)</p></li>
+
+<li><p><strong>Tutorials</strong> (especially on hard to understand topics)</p></li></ul></li>
+
+<li><p>When you are writing articles/writeups, make sure its clear and crisp. People should understand:</p>
+
+<ul>
+<li><p>How you <strong>approach</strong> the problem. What are the initial recon steps</p></li>
+
+<li><p>How did you <strong>identified</strong> the vulnerability ? What was the payload you used ?</p></li>
+
+<li><p>How did you <strong>exploit</strong> it ? Detailed step by step with code blocks and images.</p></li></ul></li></ul></li>
+
+<li><p>Give/Attend talks in conferences:</p>
+
+<ul>
+<li><p>Attend conferences like c0c0n, Nullcon, GroundZero every year. If possible try to give a talk in any of the above conferences:</p>
+
+<ul>
+<li><p><a href="http://is-ra.org/c0c0n/">c0c0n</a> CFP opens usually in March/April and happens in August.</p></li>
+
+<li><p><a href="http://nullcon.net/website/">Nullcon</a> CFP opens in November/December and happens in Feb (next year)</p></li>
+
+<li><p><a href="http://www.g0s.org/">Groundzero</a> CFP opens in July/August and happens in November.. This sometimes happens in colombo too.</p></li></ul></li>
+
+<li><p>Try to attend all the above 3 conference every year. The best way is to apply for CFP and if you get selected, they will sponsor you. Conferences like Nullcon will give you a VIP pass if you just apply for CFP (even if it you get rejected)</p></li>
+
+<li><p>The <strong>Primary Objective</strong> of attending these conferences is to get contacts of as many security researchers as possible. This would really help you in future ! If you don’t plan on socialising with others, never mind going to any of the conferences above. It’s useless !</p></li></ul></li>
+
+<li><p>IRC:</p>
+
+<ul>
+<li><p>IRC is yet another good place where researchers hang around. There are some good channels in freenode which includes:</p>
+
+<ul>
+<li>##security</li>
+
+<li>#vulnhub</li>
+
+<li>#styprchall</li></ul></li>
+
+<li><p>Some really awesome channels are there in <code>irc.smashthestack.org</code> which is highly recommended:</p>
+
+<ul>
+<li>#websec (some really awesome people here) </li></ul></li>
+
+<li><p>Hang around, if possible help others, listen to what kind of question others ask and how they reply etc.</p></li></ul></li>
+</ul>
+
+<p><br /></p>
+
+<ul>
+<li><p><strong>Open source Tools</strong>:</p>
+
+<ul>
+<li><p>Write automation scripts which can make life easier for both you and others. Make it open source so that others can use and contribute to it as well. </p></li>
+
+<li><p>Try contributing to other good tools out there. OWASP tools is a great starting point but there are lot more !</p></li></ul></li>
+</ul>
+
+
+<!-- Matter ends -->
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<ul class="icons">
+					<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+					<li><a href="https://www.instagram.com/teambi0s/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+					<li><a href="bi0s.in" style="font-size:2em">bi0s.in</a></li>
+				</ul>
+				<div class="copyright">
+					&copy; Untitled. Design: <a href="https://templated.co">TEMPLATED</a>. Images: <a href="https://unsplash.com">Unsplash</a>.
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
