@@ -3,11 +3,11 @@
   <channel>
     <title>InCTF</title>
     <description>LEARN \| HACK \| WIN</description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 27 Jul 2018 23:04:44 +0530</pubDate>
-    <lastBuildDate>Fri, 27 Jul 2018 23:04:44 +0530</lastBuildDate>
-    <generator>Jekyll v3.8.3</generator>
+    <link>http://yourdomain.com/</link>
+    <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 29 Jul 2018 15:48:45 +0530</pubDate>
+    <lastBuildDate>Sun, 29 Jul 2018 15:48:45 +0530</lastBuildDate>
+    <generator>Jekyll v3.0.1</generator>
     
   </channel>
 </rss>
