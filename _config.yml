@@ -4,17 +4,17 @@
 # Site settings
 title: InCTF
 description: 
- LEARN \| HACK \| WIN 
-owner: teambi0s # or company name
+ LEARN --- HACK --- WIN 
+owner: InCTF # or company name
 #first_published: 2013 # if migrating another site, the year of your first publish
 email: contact@inctf.in
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 social:
-  twitter: https://twitter.com/teambi0s
-  github: https://github.com/teambi0s
+  twitter: https://twitter.com/InCTF
+  #github: https://github.com/teambi0s
   #linkedin-square: https://linkedin.com/in/<username>
-  facebook-official: https://facebook.com/teambi0s
+  facebook-official: https://www.facebook.com/InCTF/?ref=br_rs
   #google-plus-square: https://plus.google.com/u/0/+<username>
   email: /contact/amritabi0s1@gmail.com
   #flickr:
