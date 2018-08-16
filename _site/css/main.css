@@ -1302,7 +1302,7 @@ textarea {
   input[type="email"]:focus,
   select:focus,
   textarea:focus {
-    box-shadow: 0 0 0 2px #000000; }
+    box-shadow: 0 0 0 2px #141b26; }
 
 .select-wrapper {
   text-decoration: none;
@@ -1393,7 +1393,7 @@ input[type="radio"] {
     content: '\f00c'; }
   input[type="checkbox"]:focus + label:before,
   input[type="radio"]:focus + label:before {
-    box-shadow: 0 0 0 2px #000000; }
+    box-shadow: 0 0 0 2px #141b26; }
 
 input[type="checkbox"] + label:before {
   border-radius: 3px; }
@@ -1928,8 +1928,8 @@ button,
   .wrapper.alt {
     padding: 0; }
   .wrapper.style1 {
-    background-color: #000000;
-    color: #bfbfbf; }
+    background-color: #141b26;
+    color: #c4c6c9; }
     .wrapper.style1 strong, .wrapper.style1 b {
       color: #ffffff; }
     .wrapper.style1 h2, .wrapper.style1 h3, .wrapper.style1 h4, .wrapper.style1 h5, .wrapper.style1 h6 {
@@ -1941,11 +1941,11 @@ button,
     .wrapper.style1 code {
       background: rgba(255, 255, 255, 0.075); }
     .wrapper.style1 header p {
-      color: #999999; }
+      color: #a1a4a8; }
     .wrapper.style1 header.major h2, .wrapper.style1 header.major h3, .wrapper.style1 header.major h4, .wrapper.style1 header.major h5, .wrapper.style1 header.major h6 {
       border-color: rgba(0, 0, 0, 0.125); }
     .wrapper.style1 header.major p {
-      color: #bfbfbf; }
+      color: #c4c6c9; }
     .wrapper.style1 label {
       color: #ffffff; }
     .wrapper.style1 input[type="text"],
@@ -1958,24 +1958,24 @@ button,
       color: rgba(0, 0, 0, 0.125); }
     .wrapper.style1 input[type="checkbox"] + label,
     .wrapper.style1 input[type="radio"] + label {
-      color: #bfbfbf; }
+      color: #c4c6c9; }
       .wrapper.style1 input[type="checkbox"] + label:before,
       .wrapper.style1 input[type="radio"] + label:before {
         background: rgba(255, 255, 255, 0.075); }
     .wrapper.style1 input[type="checkbox"]:checked + label:before,
     .wrapper.style1 input[type="radio"]:checked + label:before {
       background: #ffffff;
-      color: #000000; }
+      color: #141b26; }
     .wrapper.style1 ::-webkit-input-placeholder {
-      color: #999999 !important; }
+      color: #a1a4a8 !important; }
     .wrapper.style1 :-moz-placeholder {
-      color: #999999 !important; }
+      color: #a1a4a8 !important; }
     .wrapper.style1 ::-moz-placeholder {
-      color: #999999 !important; }
+      color: #a1a4a8 !important; }
     .wrapper.style1 :-ms-input-placeholder {
-      color: #999999 !important; }
+      color: #a1a4a8 !important; }
     .wrapper.style1 .formerize-placeholder {
-      color: #999999 !important; }
+      color: #a1a4a8 !important; }
     .wrapper.style1 .icon.major {
       border-color: rgba(0, 0, 0, 0.125); }
     .wrapper.style1 ul.alt li {
@@ -2017,7 +2017,7 @@ button,
   .wrapper.style2 {
     background-color: #2e3842; }
   .wrapper.style3 {
-    background-color: #0f151f;
+    background-color: #0F151F;
     color: #c3c5c7; }
     .wrapper.style3 strong, .wrapper.style3 b {
       color: #ffffff; }
@@ -2054,7 +2054,7 @@ button,
     .wrapper.style3 input[type="checkbox"]:checked + label:before,
     .wrapper.style3 input[type="radio"]:checked + label:before {
       background: #ffffff;
-      color: #0f151f; }
+      color: #0F151F; }
     .wrapper.style3 ::-webkit-input-placeholder {
       color: #9fa1a5 !important; }
     .wrapper.style3 :-moz-placeholder {
@@ -2106,12 +2106,12 @@ button,
   .wrapper.style4 {
     background-color: transparent; }
   .wrapper.style5 {
-    background-color: #353131c2;
-    color: #d5dfe2; }
+    background-color: rgba(53, 49, 49, 0.76);
+    color: #e4e1e6; }
     .wrapper.style5 strong, .wrapper.style5 b {
-      color: #2E3842; }
+      color: #238df7; }
     .wrapper.style5 h2, .wrapper.style5 h3, .wrapper.style5 h4, .wrapper.style5 h5, .wrapper.style5 h6 {
-      color: #3eb2e2; }
+      color: #238df7; }
     .wrapper.style5 hr {
       border-color: #dfdfdf; }
     .wrapper.style5 blockquote {
@@ -2123,9 +2123,9 @@ button,
     .wrapper.style5 header.major h2, .wrapper.style5 header.major h3, .wrapper.style5 header.major h4, .wrapper.style5 header.major h5, .wrapper.style5 header.major h6 {
       border-color: #dfdfdf; }
     .wrapper.style5 header.major p {
-      color: #4E4852; }
+      color: #e4e1e6; }
     .wrapper.style5 label {
-      color: #2E3842; }
+      color: #238df7; }
     .wrapper.style5 input[type="text"],
     .wrapper.style5 input[type="password"],
     .wrapper.style5 input[type="email"],
@@ -2136,14 +2136,14 @@ button,
       color: #dfdfdf; }
     .wrapper.style5 input[type="checkbox"] + label,
     .wrapper.style5 input[type="radio"] + label {
-      color: #4E4852; }
+      color: #e4e1e6; }
       .wrapper.style5 input[type="checkbox"] + label:before,
       .wrapper.style5 input[type="radio"] + label:before {
         background: rgba(0, 0, 0, 0.0375); }
     .wrapper.style5 input[type="checkbox"]:checked + label:before,
     .wrapper.style5 input[type="radio"]:checked + label:before {
-      background: #2E3842;
-      color: #ffffff; }
+      background: #238df7;
+      color: rgba(53, 49, 49, 0.76); }
     .wrapper.style5 ::-webkit-input-placeholder {
       color: #8E8892 !important; }
     .wrapper.style5 :-moz-placeholder {
@@ -2163,9 +2163,9 @@ button,
       .wrapper.style5 table tbody tr:nth-child(2n + 1) {
         background-color: rgba(0, 0, 0, 0.0375); }
     .wrapper.style5 table th {
-      color: #ffffff; }
+      color: #238df7; }
     .wrapper.style5 table thead {
-      border-color: #ece3e3; }
+      border-color: #dfdfdf; }
     .wrapper.style5 table tfoot {
       border-color: #dfdfdf; }
     .wrapper.style5 table.alt tbody tr td {
@@ -2176,7 +2176,7 @@ button,
     .wrapper.style5 button,
     .wrapper.style5 .button {
       box-shadow: inset 0 0 0 2px #dfdfdf;
-      color: #2E3842; }
+      color: #238df7; }
       .wrapper.style5 input[type="submit"]:hover,
       .wrapper.style5 input[type="reset"]:hover,
       .wrapper.style5 input[type="button"]:hover,
@@ -2229,7 +2229,7 @@ button,
   -ms-transition: -ms-transform 0.5s ease;
   transition: transform 0.5s ease;
   -webkit-overflow-scrolling: touch;
-  background: #000000;
+  background: #141b26;
   color: #ffffff;
   height: 100%;
   max-width: 80%;

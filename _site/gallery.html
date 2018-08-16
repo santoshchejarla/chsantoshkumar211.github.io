@@ -9,20 +9,35 @@
 
   <head>
   <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>GALLERY</title>
+  <title>Gallery</title>
   <link rel="shortcut icon" type="image/png" href="images/favicon.png" >
-  <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
-  <link href="css/sliderResponsive.css" rel="stylesheet" type="text/css">
-  <meta name="description" content="LEARN \| HACK \| WIN">
+  <meta name="description" content="LEARN --- HACK --- WIN">
   <!--[if lte IE 8]><script src="/js/ie/html5shiv.js"></script><![endif]-->
-  <link rel="canonical" href="http://yourdomain.com/photos.html">
+  <link rel="canonical" href="http://yourdomain.com/gallery.html">
   <link rel="stylesheet" href="css/main.css" />
   <!--[if lte IE 8]><link rel="stylesheet" href="/css/ie8.css" /><![endif]-->
   <!--[if lte IE 9]><link rel="stylesheet" href="/css/ie9.css" /><![endif]-->
   <link rel="alternate" type="application/rss+xml" title="InCTF" href="http://yourdomain.com/feed.xml">
-  <script src="js/main.js"></script>
+  <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+  <link href="css/sliderResponsive.css" rel="stylesheet" type="text/css">
+
+  <!--=======Carousel for Photos=======-->
+  
+    <title>Bootstrap Example</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--Skipping bootstrap css, for proper content allignment (ref. sayooj samuel) -->
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <style>
+  /* Make the image fully responsive */
+  .carousel-inner img {
+      width: 100%;
+      height: 100%;
+  }
+  </style>
 <style>
 
 #slider2 {
@@ -63,7 +78,7 @@ body {
     padding: 10px 15vw;
 }
 </style>
-
+ 
 </head>
 
 
@@ -81,8 +96,24 @@ body {
         <a href="#menu" class="menuToggle"><span>Menu</span></a>
         <div id="menu">
           <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><img src="images/INCTF.png" style="height:100%;width:100%"></li>
+	    <li><a href="index.html">Home</a></li>
 	    <li><a href="https://portal.inctf.in/register">Registration</a></li>
+            
+	    
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li><a href="/photos.html">GALLERY</a></li>
+            
             
             
             <li><a href="/ctf.html">CTF ?</a></li>
@@ -93,11 +124,11 @@ body {
             
             
             
-            <li><a href="/photos.html">GALLERY</a></li>
+            <li><a href="/gallery.html">Gallery</a></li>
             
             
             
-            <li><a href="/sponsers.html">Our Sponsers</a></li>
+            <li><a href="/sponsors.html">Our Sponsors</a></li>
             
             
             
@@ -109,11 +140,7 @@ body {
             
             
             
-            <li><a href="/generic.html">Generic</a></li>
-            
-            
-            
-            <li><a href="/elements.html">Elements</a></li>
+            <li><a href="/timeline.html">InCTF timeline</a></li>
             
             
           </ul>
@@ -128,10 +155,12 @@ body {
       <article id="main">
 
   <header>
-    <h2>GALLERY</h2>
+    <h2>Gallery</h2>
   </header>
 
   <section class="wrapper style5">
+    <div class="inner">
+      <section class="wrapper style5">
     <div class="inner">
 
 <!-- Slider 1 -->
@@ -141,11 +170,7 @@ body {
     <div class="12u"><span class="image fit"><img src="images/backdrop4.jpg" /></span></div>
     <div class="12u"><span class="image fit"><img src="images/backdrop2.jpg" /></span></div>
     <div class="12u"><span class="image fit"><img src="images/backdrop3.jpg" /></span></div>
-    <!--<div style="background-image:url(https://unsplash.it/1920/1200?image=839)"></div>
-    <div style="background-image:url(https://unsplash.it/1920/1200?image=838)"></div>
-    <div style="background-image:url(https://unsplash.it/1920/1200?image=836)"></div>
-    <div style="background-image:url(https://unsplash.it/1920/1200?image=826)"></div>
-    <div style="background-image:url(https://unsplash.it/1920/1200?image=822)"></div>-->
+
     <!-- The Arrows -->
     <i class="left" class="arrows" style="z-index:2; position:absolute;"><svg viewBox="0 0 100 100"><path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z"></path></svg></i>
     <i class="right" class="arrows" style="z-index:2; position:absolute;"><svg viewBox="0 0 100 100"><path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" transform="translate(100, 100) rotate(180) "></path></svg></i>
@@ -186,6 +211,10 @@ $(document).ready(function() {
   })();
 
 </script>
+</section>
+
+
+    </div>
   </section>
 
 </article>
@@ -197,21 +226,14 @@ $(document).ready(function() {
     
     
     
-    <li><a target="_blank" href="https://twitter.com/teambi0s" class="icon fa-twitter"
+    <li><a target="_blank" href="https://twitter.com/InCTF" class="icon fa-twitter"
            ><span class="label">twitter</span></a></li>
     
     
     
     
     
-    <li><a target="_blank" href="https://github.com/teambi0s" class="icon fa-github"
-           ><span class="label">github</span></a></li>
-    
-    
-    
-    
-    
-    <li><a target="_blank" href="https://facebook.com/teambi0s" class="icon fa-facebook-official"
+    <li><a target="_blank" href="https://www.facebook.com/InCTF/?ref=br_rs" class="icon fa-facebook-official"
            ><span class="label">facebook-official</span></a></li>
     
     
@@ -228,7 +250,7 @@ $(document).ready(function() {
     <li>&copy; 
     
     2018
-    teambi0s</li>
+    InCTF</li>
     <li><a href="https://bi0s.in">bi0s.in</a></li>
     <li>Built with: <a href="http://jekyllrb.com" target="_blank">Jekyll</a></li>
   </ul>
@@ -236,8 +258,8 @@ $(document).ready(function() {
 
 
       <!-- Scripts 
-<script src="js/jquery.min.js"></script>-->
-<!--<script src="js/jquery.scrollex.min.js"></script>-->
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.scrollex.min.js"></script>-->
 <script src="js/jquery.scrolly.min.js"></script>
 <script src="js/skel.min.js"></script>
 <script src="js/util.js"></script>
