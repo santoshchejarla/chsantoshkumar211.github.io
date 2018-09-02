@@ -1,100 +1,93 @@
-/*
-	Spectral by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 (function($) {
+	"use strict"
 
-	skel
-		.breakpoints({
-			xlarge:	'(max-width: 1680px)',
-			large:	'(max-width: 1280px)',
-			medium:	'(max-width: 980px)',
-			small:	'(max-width: 736px)',
-			xsmall:	'(max-width: 480px)'
-		});
+	///////////////////////////
+	// Preloader
+	$(window).on('load', function() {
+		$("#preloader").delay(600).fadeOut();
+	});
 
-	$(function() {
+	///////////////////////////
+	// Scrollspy
+	$('body').scrollspy({
+		target: '#nav',
+		offset: $(window).height() / 2
+	});
 
-		var	$window = $(window),
-			$body = $('body'),
-			$wrapper = $('#page-wrapper'),
-			$banner = $('#banner'),
-			$header = $('#header');
+	///////////////////////////
+	// Smooth scroll
+	$("#nav .main-nav a[href^='#']").on('click', function(e) {
+		e.preventDefault();
+		var hash = this.hash;
+		$('html, body').animate({
+			scrollTop: $(this.hash).offset().top
+		}, 600);
+	});
 
-		// Disable animations/transitions until the page has loaded.
-			$body.addClass('is-loading');
+	$('#back-to-top').on('click', function(){
+		$('body,html').animate({
+			scrollTop: 0
+		}, 600);
+	});
 
-			$window.on('load', function() {
-				window.setTimeout(function() {
-					$body.removeClass('is-loading');
-				}, 100);
-			});
+	///////////////////////////
+	// Btn nav collapse
+	$('#nav .nav-collapse').on('click', function() {
+		$('#nav').toggleClass('open');
+	});
 
-		// Mobile?
-			if (skel.vars.mobile)
-				$body.addClass('is-mobile');
-			else
-				skel
-					.on('-medium !medium', function() {
-						$body.removeClass('is-mobile');
-					})
-					.on('+medium', function() {
-						$body.addClass('is-mobile');
-					});
+	///////////////////////////
+	// Mobile dropdown
+	$('.has-dropdown a').on('click', function() {
+		$(this).parent().toggleClass('open-drop');
+	});
 
-		// Fix: Placeholder polyfill.
-			$('form').placeholder();
+	///////////////////////////
+	// On Scroll
+	$(window).on('scroll', function() {
+		var wScroll = $(this).scrollTop();
 
-		// Prioritize "important" elements on medium.
-			skel.on('+medium -medium', function() {
-				$.prioritize(
-					'.important\\28 medium\\29',
-					skel.breakpoint('medium').active
-				);
-			});
+		// Fixed nav
+		wScroll > 1 ? $('#nav').addClass('fixed-nav') : $('#nav').removeClass('fixed-nav');
 
-		// Scrolly.
-			$('.scrolly')
-				.scrolly({
-					speed: 1500,
-					offset: $header.outerHeight()
-				});
+		// Back To Top Appear
+		wScroll > 700 ? $('#back-to-top').fadeIn() : $('#back-to-top').fadeOut();
+	});
 
-		// Menu.
-			$('#menu')
-				.append('<a href="#menu" class="close"></a>')
-				.appendTo($body)
-				.panel({
-					delay: 500,
-					hideOnClick: true,
-					hideOnSwipe: true,
-					resetScroll: true,
-					resetForms: true,
-					side: 'right',
-					target: $body,
-					visibleClass: 'is-menu-visible'
-				});
+	///////////////////////////
+	// magnificPopup
+	$('.work').magnificPopup({
+		delegate: '.lightbox',
+		type: 'image'
+	});
 
-		// Header.
-			if (skel.vars.IEVersion < 9)
-				$header.removeClass('alt');
+	///////////////////////////
+	// Owl Carousel
+	$('#about-slider').owlCarousel({
+		items:1,
+		loop:true,
+		margin:15,
+		nav: true,
+		navText : ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
+		dots : true,
+		autoplay : true,
+		animateOut: 'fadeOut'
+	});
 
-			if ($banner.length > 0
-			&&	$header.hasClass('alt')) {
-
-				$window.on('resize', function() { $window.trigger('scroll'); });
-
-				$banner.scrollex({
-					bottom:		$header.outerHeight() + 1,
-					terminate:	function() { $header.removeClass('alt'); },
-					enter:		function() { $header.addClass('alt'); },
-					leave:		function() { $header.removeClass('alt'); }
-				});
-
+	$('#testimonial-slider').owlCarousel({
+		loop:true,
+		margin:15,
+		dots : true,
+		nav: false,
+		autoplay : true,
+		responsive:{
+			0: {
+				items:1
+			},
+			992:{
+				items:2
 			}
-
+		}
 	});
 
 })(jQuery);
