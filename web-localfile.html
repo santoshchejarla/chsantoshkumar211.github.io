@@ -118,13 +118,12 @@
 
                             <h3 id="owasp">OWASP :</h3>
                             
-                            <p>Local File Inclusion (also known as LFI) is the process of including files, that are already locally present on the server, through the exploiting of vulnerable inclusion procedures implemented in the application. This vulnerability occurs, for example, when a page receives, as input, the path to the file that has to be included and this input is not properly sanitized, allowing directory traversal characters (such as dot-dot-slash) to be injected. Although most examples point to vulnerable PHP scripts, we should keep in mind that it is also common in other technologies such as JSP, ASP and others.</p>
-                            
+                            <p>Local File Inclusion (also known as LFI) allows an attacker to include files in server-side through the web browser. File inclusions are part of every advanced server-side scripting language on the web.LFI is commonly found to affect web applications that rely on a scripting runtime. This occurs mainly due to a bad input validation mechanism, wherein the user’s input is passed to the file include commands without proper validation.</p>                    
                             <h3 id="localfileinclusioninphp">Local file inclusion in PHP:</h3>
                             
                             <p>Consider an example as follows where we can apply this attack.
                             http://victim_site/abc.php?file=userinput.txt
-                            The value of “file” parameter is taken into the following PHP code, and the file is included:</p>
+                            The file variable is taken from the url and is included:</p>
                             
                             <pre><code class="php language-php">&lt;?php
 $file = $_GET['file'];
@@ -134,9 +133,11 @@ if(isset($file))
 }
 ?&gt;</code></pre>
                             
-                            <p>An attacker may give malicious input for the "file" parameter which may give unauthorized files in that directory, he can also change the directories by using characters like "../".He can access the user credentials by giving input as "../../../../etc/passwd".In some cases where the file extension is added by default, we can avoid it by adding null byte terminator " %00".Any character after this special character will be ignored.</p>
+                            <p>An attacker may give vicious input for the "file" parameter which may give unintended files in that directory, he can also change the directories by using characters like "../".
+								He can access the users credentials by giving input as "../../../../etc/passwd".
+								If the file extension is added in backend, we can avoid it by adding null byte terminator "%00".Any string after this special character will be ignored.</p>
                             
-                            <p>Suppose that the input given is taken by the following code and the default extension being set is “.php”.</p>
+                            <p>Suppose the “.php” is being added in backend.</p>
                             
                             <pre><code class="php language-php">&lt;?php
 “include/”.include($_GET[‘testfile’].”.php”);
@@ -144,13 +145,13 @@ if(isset($file))
                             
                             <p>by giving file=../../../../etc/passwd%00 we can access the file by passing the ".php" extension.</p>
                             
-                            <p>An attacker can also download files by changing the file names. For example
+                            <p>An attacker can also get files by changing the file names. For example
                             <br>URL : example/?download=broucher.pdf
-                            </br>The attacker may change the broucher.pdf to any other file such as passwords.txt,users.txt etc,</p>
+                            </br>The attacker may change the broucher.pdf to any other file such as secrets.txt,passwords.txt,users.txt etc,</p>
                             
                             <h2 id="impact">Impact</h2>
                             
-                            <p>A successful LFI may result in compromise of the system ,data leakage etc.The attacker can read,write,download files and can also run arbitary codes with privileges of web server</p>
+                            <p>LFI can lead to compromise of the system ,data leakage etc.The attacker can read,write,download files and can also run arbitary codes with privileges of web server</p>
                             
                             <h2 id="exploreityourself">Explore it yourself</h2>
                             
