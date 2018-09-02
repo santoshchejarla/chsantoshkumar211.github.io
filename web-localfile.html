@@ -211,7 +211,7 @@ if(isset($file))
                             <li>USERNAME : natas7</li>
                             
                             <li>PASSWORD : 7z3hEENjQtflzgnT29q7wAvMNfZdh0i9
-                            <img src="img/wiki/lfi/natas7.1.png" alt="natas7" width="1000em" /></li>
+                            <img src="img/wiki/lfi/natas7.1.png" alt="natas7" width="100%" /></li>
                             </ul>
                             
                             <p>The site is very simple only with two buttons, but once when you click on Home or About the URL changes as follows :</p>
@@ -221,13 +221,13 @@ if(isset($file))
                             
                             <p>It looks like the PHP file is including the file given as page, when we check the source code we get the hint as <br />
                              hint: password for webuser natas8 is in /etc/natas_webpass/</br></br>
-                              <img src="img/wiki/lfi/natas7.4.png" alt="natas7" width="1000em" /></p>
+                              <img src="img/wiki/lfi/natas7.4.png" alt="natas7" width="100%" /></p>
                             
                             <p>So, let's try to include that file in the URL 
                              URL : index.php?page=/etc/natas_webpass/natas8
                             On including this file we get the password for the next level on the screen </br></br>
                             password : DBfUBfqQG69KvJvJ1iAbMoIpwSNQ9bWe</br></br>
-                            <img src="img/wiki/lfi/natas7.5.png" alt="natas7" width="1000em"/>
+                            <img src="img/wiki/lfi/natas7.5.png" alt="natas7" width="100%"/>
                             </br></br>
                             This is a basic example of Local file inclusion vulnerability.</p>
 
