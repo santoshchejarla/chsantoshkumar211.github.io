@@ -38,6 +38,8 @@
 	<!-- Custom stlylesheet -->
   <link type="text/css" rel="stylesheet" href="css/style.css" />
   <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+  <link rel="import" href="https://cdn.rawgit.com/zerodevx/zero-md/v1.1.0/build/zero-md.html">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/1.1.0/webcomponents-loader.js"></script>
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -124,92 +126,7 @@
 								<li><i class="fa fa-user"></i>CHS</li>
 								<li><i class="fa fa-clock-o"></i>29th Jul 2018</li>
 								<!--<li><i class="fa fa-comments"></i>57</li>-->
-								<h1><a id="Google_Dorking_0"></a>Google Dorking</h1>
-<blockquote>
-<p>Google hacking, also named Google dorking,is a computer hacking meathod that uses Google Search and other Google apps to find security holes in the composition and computer code that websites use. it can return info that is difficult to detect through simple search queries. That description includes information that is not intended for public viewing but that has not been adequately guarded.</p>
-</blockquote>
-<p>In August 2014, the United States Department of Homeland Security (DHS), the FBI and the National Counterterrorism Center issued a bulletin warning agencies to guard against the potential for Google dorking on their sites. One of the first intrusion prevention measures proposed is to conduct Google dorking expeditions using likely attack parameters to discover what type of information an intruder could access.</p>
-<h2><a id="Lets_get_access_to_a_CCTV_camera_5"></a>Let’s get access to a CCTV camera</h2>
-<p>Go to <a href="http://google.com">google.com</a> and search for</p>
-<pre><code>inurl:view/shtml
-</code></pre>
-<p>Now let’s navigate to the 6th result and see what we will be greeted with</p>
-<p><img src="img/random/cctvsearch.png" alt="google search" height="800"></p>
-<p><img src="img/random/cctv.png" alt="cctv"></p>
-<p>We can see that we just got access to one of the cctv camera with a simple google dork.</p>
-<p>In this way we can get access to various hidden files,unintended files etc by concating various dorks or using them alone.</p>
-<p>There are many similar advanced operators which can be used to exploit insecure websites:</p>
-<table class="table table-striped table-bordered">
-<thead>
-<tr>
-<th>Operator</th>
-<th>Purpose</th>
-<th>Mixes with Other Operators?</th>
-<th>Can be used Alone?</th>
-<th>Web</th>
-<th>Images</th>
-<th>Groups</th>
-<th>News</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>ntitle</td>
-<td>Search page Title</td>
-<td>yes</td>
-<td>yes</td>
-<td>yes</td>
-<td>yes</td>
-<td>yes</td>
-<td>yes</td>
-</tr>
-<tr>
-<td>allintitle</td>
-<td>Search page title</td>
-<td>no</td>
-<td>yes</td>
-<td>yes</td>
-<td>yes</td>
-<td>yes</td>
-<td>yes</td>
-</tr>
-<tr>
-<td>inurl</td>
-<td>Search URL</td>
-<td>yes</td>
-<td>yes</td>
-<td>yes</td>
-<td>yes</td>
-<td>not really</td>
-<td>like intitle</td>
-</tr>
-<tr>
-<td>filetype</td>
-<td>specific files</td>
-<td>yes</td>
-<td>yes</td>
-<td>yes</td>
-<td>no</td>
-<td>not really</td>
-<td></td>
-</tr>
-<tr>
-<td>intext</td>
-<td>Search text of page only</td>
-<td>yes</td>
-<td>yes</td>
-<td>yes</td>
-<td>yes</td>
-<td>yes</td>
-<td>yes</td>
-</tr>
-</tbody>
-</table>
-<p>Here is a list of various dorks more than 2000 : download pdf</p>
-<p>Be updated with dorks from <a href="http://exploit-db.com">exploit-db.com</a> which is an awesome database for dorks and other exploits.</p>
-<img src="img/edb.png" height="500em"><br>
-<br> 
-<p>Try to find passwords.xls <i class="em em-stuck_out_tongue"></i> </p>
+								<zero-md src="./dorking.md"></zero-md>
 						<!-- blog author -->
 						<div class="blog-author">
 							<div class="media">
