@@ -58,7 +58,7 @@ for i in range(1,10):
 print("Final pw : "+passwd)
 ```
 
-On dumpling the admins password and submitting the pw=17292115 we get the flag : 
+On dumping the admins password and submitting the pw=17292115 we get the flag : 
 ```flag{sQ1_inj3c7i0n_i5_v3ry_3asy}```
 
 ***Interesting*** ***fact*** : the 1729 from admins password represents the Ramanujan number about which you can learn [here](https://en.wikipedia.org/wiki/1729_(number). 
