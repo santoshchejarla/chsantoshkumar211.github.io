@@ -37,6 +37,8 @@
 
 	<!-- Custom stlylesheet -->
 	<link type="text/css" rel="stylesheet" href="css/style.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/1.1.0/webcomponents-loader.js"></script>
+    <link rel="import" href="https://cdn.rawgit.com/zerodevx/zero-md/v1.1.0/build/zero-md.html">
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -79,7 +81,7 @@
 					<li><a href="android.html">Android exploitation</a></li>
 					<li><a href="random.html">Random stuff</a></li>
 					<li><a href="CTFs.html">CTFs</a></li>
-                    <li><a href="CV/resume.html" >Resume</a></li>
+					<li><a href="CV/resume.html">Resume</a></li>
 					<li><a href="index.html#contact">Contact</a></li>
 				</ul>
 				<!-- /Main navigation -->
@@ -90,14 +92,13 @@
 
 		<!-- header wrapper -->
 		<div class="header-wrapper sm-padding bg-grey">
-			<div class="container">
-				<h2>Recon</h2>
-				<ul class="breadcrumb">
-					<li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item"><a href="web-intro.html">recon</a></li>
-				</ul>
+				<div class="container">
+					<h2>Web exploitation</h2>
+					<ul class="breadcrumb">
+						<li class="breadcrumb-item"><a href="index.html">back_to_sql</a></li>
+					</ul>
+				</div>
 			</div>
-		</div>
 		<!-- /header wrapper -->
 
 	</header>
@@ -116,56 +117,33 @@
 				<main id="main" class="col-md-9">
 					<div class="blog">
 						<div class="blog-img">
-							<img class="img-responsive" src="./img/recon/cyber-forensics1.jpg" alt="">
+							<img class="img-responsive" src="./img/wiki/sql/sql.png" alt="">
 						</div>
 						<div class="blog-content">
 							<ul class="blog-meta">
 								<li><i class="fa fa-user"></i>CHS</li>
-								<li><i class="fa fa-clock-o"></i>29th Jul 2018</li>
+								<li><i class="fa fa-clock-o"></i>7th Dec 2018</li>
 								<!--<li><i class="fa fa-comments"></i>57</li>-->
+							</ul>
+                            <zero-md src="back_to_sql.md"></zero-md>
 
 						<!-- blog author -->
 						<div class="blog-author">
 							<div class="media">
 								<div class="media-left">
-								<a href="recon-dir.html"><img class="media-object" src="img/recon/dir.png" width="400em" height="200em" alt=""></a>
+									<img class="media-object" src="my logo.jpg" height="150em" alt="">
 								</div>
 								<div class="media-body">
 									<div class="media-heading">
-										<a href="recon-dir.html"><h3>dir search</h3></a>
-										<!--
+										<h3>CHS</h3>
 										<div class="author-social">
 											<a href="https://www.facebook.com/ch.santoshkumar211"><i class="fa fa-facebook"></i></a>
 											<a href="https://twitter.com/ch_santoshkumar"><i class="fa fa-twitter"></i></a>
 											<a href="https://www.linkedin.com/in/santosh-kumar-chejarla-ba399614b/"><i class="fa fa-linkedin"></i></a>
 											<a href="https://github.com/chsantoshkumar211"><i class="fa fa-github"></i></a>
-										</div>-->
+										</div>
 									</div>
-									<p>dirsearch is a simple command line tool designed to brute force directories and files in websites....<a href="recon-dir.html">read more</a></p>
-								</div>
-							</div>
-						</div>
-						<!-- /blog author -->
-
-						<!-- blog author -->
-						
-						<div class="blog-author">
-							<div class="media">
-								<div class="media-left">
-									<a href="recon-sub.html"><img class="media-object" src="img/recon/sub1.png" width="400em" height="200em" alt=""></a>
-								</div>
-								<div class="media-body">
-									<div class="media-heading">
-										<a href="recon-sub.html"><h3>sublist3r</h3></a>
-										<!--
-										<div class="author-social">
-											<a href="https://www.facebook.com/ch.santoshkumar211"><i class="fa fa-facebook"></i></a>
-											<a href="https://twitter.com/ch_santoshkumar"><i class="fa fa-twitter"></i></a>
-											<a href="https://www.linkedin.com/in/santosh-kumar-chejarla-ba399614b/"><i class="fa fa-linkedin"></i></a>
-											<a href="https://github.com/chsantoshkumar211"><i class="fa fa-github"></i></a>
-										</div>-->
-									</div>
-									<p>Sublist3r is a python tool designed to enumerate subdomains of websites using OSINT. It helps penetration testers and bug hunters collect ....<a href="recon-sub.html">read more</a></p>
+									<p>SQL challenge from InCTF National round</p>
 								</div>
 							</div>
 						</div>
@@ -179,77 +157,14 @@
 				<!-- Aside -->
 				<aside id="aside" class="col-md-3">
 
-
 					<!-- Category -->
 					<div class="widget">
-                            <h3 class="title">Topics</h3>
-                            <div class="widget-category">
-                                    <a href="recon-dir.html">dirsearch</a>
-                                <a href="recon-sub.html">sublist3r</a>
-                               <!--
-                                <a href="#">Web Development<span>(74)</span></a>
-                                <a href="#">Branding<span>(60)</span></a>
-                                <a href="#">Photography<span>(5)</span></a>
-                                -->
-                            </div>
-                        </div>
+						<h3 class="title">Topics</h3>
+						<div class="widget-category">
+							<a href="ctfs-back_to_sql.html">back_to_sql</a>
+						</div>
+					</div>
 					<!-- /Category -->
-
-					<!-- Posts sidebar 
-					<div class="widget">
-						<h3 class="title">Populare Posts</h3>
-
-						<!-- single post 
-						<div class="widget-post">
-							<a href="#">
-								<img src="./img/post1.jpg" alt=""> Blog title goes here
-							</a>
-							<ul class="blog-meta">
-								<li>Oct 18, 2017</li>
-							</ul>
-						</div>
-						<!-- /single post -->
-
-						<!-- single post 
-						<div class="widget-post">
-							<a href="#">
-								<img src="./img/post2.jpg" alt=""> Blog title goes here
-							</a>
-							<ul class="blog-meta">
-								<li>Oct 18, 2017</li>
-							</ul>
-						</div>
-						<!-- /single post 
-
-
-						<!-- single post 
-						<div class="widget-post">
-							<a href="#">
-								<img src="./img/post3.jpg" alt=""> Blog title goes here
-							</a>
-							<ul class="blog-meta">
-								<li>Oct 18, 2017</li>
-							</ul>
-						</div>
-						<!-- /single post 
-
-					</div>
-					<!-- /Posts sidebar -->
-
-					<!-- Tags -
-					<div class="widget">
-						<h3 class="title">Tags</h3>
-						<div class="widget-tags">
-							<a href="#">Web</a>
-							<a href="#">Design</a>
-							<a href="#">Graphic</a>
-							<a href="#">Marketing</a>
-							<a href="#">Development</a>
-							<a href="#">Branding</a>
-							<a href="#">Photography</a>
-						</div>
-					</div>
-					<!-- /Tags -->
 
 				</aside>
 				<!-- /Aside -->
@@ -286,7 +201,7 @@
 						<li><a href="https://twitter.com/ch_santoshkumar"><i class="fa fa-twitter"></i></a></li>
 						<li><a href="https://www.linkedin.com/in/santosh-kumar-chejarla-ba399614b/"><i class="fa fa-linkedin"></i></a></li>
 						<li><a href="https://github.com/chsantoshkumar211"><i class="fa fa-github"></i></a></li>
-				</ul>
+					</ul>
 					<!-- /footer follow -->
 
 					<!-- footer copyright -->
