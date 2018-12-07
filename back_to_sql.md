@@ -56,6 +56,9 @@ As Einstein says
 Look deep into nature, and then you will understand everything better.
 ```
 If you observe this snippet closely you can understand that it's just filtering the work "like" alone but if the word "like" is concatenated with any other character this snippet will not work E.g. ``` rlike ```
+
+```rlike``` Woks just like ```regexp```
+
 ```PHP
 if(preg_match('/\blike\b/i', $_GET['pass'])) exit("No like");
 ```
