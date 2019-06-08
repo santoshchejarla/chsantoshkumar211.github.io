@@ -37,6 +37,8 @@
 
 	<!-- Custom stlylesheet -->
 	<link type="text/css" rel="stylesheet" href="css/style.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/1.1.0/webcomponents-loader.js"></script>
+    <link rel="import" href="https://cdn.rawgit.com/zerodevx/zero-md/v1.1.0/build/zero-md.html">
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -79,7 +81,7 @@
 					<li><a href="android.html">Android exploitation</a></li>
 					<li><a href="random.html">Random stuff</a></li>
 					<li><a href="CTFs.html">CTFs</a></li>
-                    <li><a href="CV/resume.html" >Resume</a></li>
+					<li><a href="CV/resume.html">Resume</a></li>
 					<li><a href="index.html#contact">Contact</a></li>
 				</ul>
 				<!-- /Main navigation -->
@@ -90,14 +92,13 @@
 
 		<!-- header wrapper -->
 		<div class="header-wrapper sm-padding bg-grey">
-			<div class="container">
-				<h2>Interesting CTF challenges developed by me</h2>
-				<ul class="breadcrumb">
-					<li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item"><a href="CTFs.html">CTFs</a></li>
-				</ul>
+				<div class="container">
+					<h2>Web exploitation</h2>
+					<ul class="breadcrumb">
+						<li class="breadcrumb-item"><a href="ctfs-sql_auth.html">sql_auth</a></li>
+					</ul>
+				</div>
 			</div>
-		</div>
 		<!-- /header wrapper -->
 
 	</header>
@@ -116,81 +117,17 @@
 				<main id="main" class="col-md-9">
 					<div class="blog">
 						<div class="blog-img">
-							<img class="img-responsive" src="./img/CTF/inctfjq/inctfjq.png" alt="">
+							<img class="img-responsive" src="./img/wiki/sql/sql.png" alt="">
 						</div>
 						<div class="blog-content">
 							<ul class="blog-meta">
 								<li><i class="fa fa-user"></i>CHS</li>
-								<li><i class="fa fa-clock-o"></i>9th Dec Jul 2018</li>
+								<li><i class="fa fa-clock-o"></i>25th Aug 2018</li>
 								<!--<li><i class="fa fa-comments"></i>57</li>-->
-																		<!-- blog author -->
-						
-						<div class="blog-author">
-							<div class="media">
-								<div class="media-left">
-									<a href="ctfs-sql_auth.html"><img class="media-object" src="img/CTF/sqlauth/sqlauth1.png" width="400em" height="200em" alt=""></a>
-								</div>
-								<div class="media-body">
-									<div class="media-heading">
-										<a href="ctfs-sql_auth.html"><h3>sql_auth</h3></a>
-									</div>
-									<p>This is one of the best challenges I have made so far for ctfs based on sql injections....<a href="ctfs-sql_auth.html">read more</a></p>
-								</div>
-							</div>
-						</div>
-						<!-- /blog author -->
+							</ul>
+                            <zero-md src="sqlauth.md"></zero-md>
 
 						<!-- blog author -->
-						<div class="blog-author">
-							<div class="media">
-								<div class="media-left">
-								<a href="ctfs-old-school-sql.html"><img class="media-object" src="img/CTF/old_school_sql/old_school_sql.png" width="400em" height="200em" alt=""></a>
-								</div>
-								<div class="media-body">
-									<div class="media-heading">
-										<a href="ctfs-old-school-sql.html"><h3>old_school_sql</h3></a>
-									</div>
-									<p>SQL challenge from Bsides Delhi CTF 2018....<a href="ctfs-old-school-sql.html">read more</a></p>
-								</div>
-							</div>
-						</div>
-						<!-- /blog author -->
-
-						<!-- blog author -->
-						
-						<div class="blog-author">
-							<div class="media">
-								<div class="media-left">
-									<a href="ctfs-back_to_sql.html"><img class="media-object" src="img/CTF/back_to_sql/sql1.png" width="400em" height="200em" alt=""></a>
-								</div>
-								<div class="media-body">
-									<div class="media-heading">
-										<a href="ctfs-back_to_sql.html"><h3>back_to_sql</h3></a>
-									</div>
-									<p>SQL challenge from InCTF National round 2018....<a href="ctfs-back_to_sql.html">read more</a></p>
-								</div>
-							</div>
-						</div>
-						<!-- /blog author -->
-
-												<!-- blog author -->
-						
-						<div class="blog-author">
-							<div class="media">
-								<div class="media-left">
-									<a href="ctfs-back_to_sql.html"><img class="media-object" src="img/CTF/inctfjq/inctfjq.png" width="400em" height="200em" alt=""></a>
-								</div>
-								<div class="media-body">
-									<div class="media-heading">
-										<a href="ctfs-inctfjq.html"><h3>a_w1n_f0r_brut3f0rc3</h3></a>
-									</div>
-									<p>This is a basic sql injection web challege that I made for inctfj quals....<a href="ctfs-inctfjq.html">read more</a></p>
-								</div>
-							</div>
-						</div>
-						<!-- /blog author -->
-
-												<!-- blog author -->
 						<div class="blog-author">
 							<div class="media">
 								<div class="media-left">
@@ -206,7 +143,7 @@
 											<a href="https://github.com/chsantoshkumar211"><i class="fa fa-github"></i></a>
 										</div>
 									</div>
-									<p>List of challenges I designed for inctf,inctfj,bsides etc.</p>
+									<p>I made this challenge for an internal web ctf we had among our team in 2018.I have slightly modified this challenge for <b>vmware ctf</b> which is held as part of <b>InCTF national finals</b>.</p>
 								</div>
 							</div>
 						</div>
@@ -220,17 +157,16 @@
 				<!-- Aside -->
 				<aside id="aside" class="col-md-3">
 
-
 					<!-- Category -->
 					<div class="widget">
-                            <h3 class="title">Topics</h3>
-                            <div class="widget-category">
-                                    <a href="ctfs-old-school-sql.html">old_school_sql</a>
-                                <a href="ctfs-back_to_sql.html">back_to_sql</a>
-								<a href="ctfs-inctfjq.html">a_w1n_f0r_brut3f0rc3</a>
-							<a href="ctfs-sql_auth.html">sql_auth</a>
-                            </div>
-                        </div>
+						<h3 class="title">Topics</h3>
+						<div class="widget-category">
+							<a href="ctfs-old-school-sql.html">old school SQL</a>
+							<a href="ctfs-back_to_sql.html">back_to_sql</a>
+							<a href="ctfs-inctfjq.html">a_w1n_f0r_brut3f0rc3</a>
+                            <a href="ctfs-sql_auth.html">sql_auth</a>
+						</div>
+					</div>
 					<!-- /Category -->
 
 				</aside>
@@ -268,7 +204,7 @@
 						<li><a href="https://twitter.com/ch_santoshkumar"><i class="fa fa-twitter"></i></a></li>
 						<li><a href="https://www.linkedin.com/in/santosh-kumar-chejarla-ba399614b/"><i class="fa fa-linkedin"></i></a></li>
 						<li><a href="https://github.com/chsantoshkumar211"><i class="fa fa-github"></i></a></li>
-				</ul>
+					</ul>
 					<!-- /footer follow -->
 
 					<!-- footer copyright -->
