@@ -29,7 +29,6 @@ The night I landed in Israel was Shabbat, which means no train, no bus everythin
 Coming to the campus life, It's just enriching you can see students from all over the globe and faculty taking classes in shorts, ***Internet speed touching 1.5 Gbps*** :)...State of the are library, the faculty were amazing and friendly too. Honorable mention for the coffee making machines in every class, if you are a coffee lover you'll definitely enjoy listening to class with a hot coffee whenever you are sleepy.
 
 ![Campus](img/random/bgu/campus1.jpg)
-![Campus](img/random/bgu/campus.png)
 ![Campus](img/random/bgu/library.jpg)
 
 
@@ -103,7 +102,7 @@ After graduation day, we (Venu anna, Gopa, Me, Taniya and Swapnil) left to Haifa
 
 Haifa - Bahá'í Gardens and the beaches are a must-visit place in Haifa.
 
-![Haifa](img/random/bgu/haifa.jpeg)
+![Haifa](img/random/bgu/haifa.jpg)
 
 Tel-Aviv - The silicon valley of the middle east, The party land, The city that never sleeps....they call it and yeah that's true. We (Me, Gopa and Venu anna) spent 2 days in Tel-Aviv, we stayed at Chetana Amma's house for the two days. Who's a follower of Mata Amritanandamayi. She's so happy to receive us, she treated us like her grandchildren and she also took us for their family Shabbat dinner as well :),. I'm so happy to have someone who made us feel like home in Israel, the conversation that I had with her the night before I left Israel is something very valuable for me, she shared her experience and the lessons she learned in her long journey of 70 years. The last two days were amazing, emotional and adventurous.
 
