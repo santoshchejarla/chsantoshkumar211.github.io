@@ -38,7 +38,7 @@ The classes started with an intro to ML and data-mining followed by ML for Cyber
 
 The strength of whole class was 40 I guess and Indians + Chinese made more than 50% of the class lol!!, there were people from Greece, Spain, Mexico, USA, Chile, etc (4 Israelis too), this gave me an opportunity to explore different cultures and being the youngest among all the students of the class I took freedom to ask some crazy questions, Most of the class were graduates with majority of the Chinese doing their M.S in Maths, a Professor from Chile, Researchers from Japan, etc. I'm literally the kid of the class ;)
 
-Special Mentions: Moran, Ben (Israelies); Angel (Spain); Pepe (Mexico); Patricio (Chile); Xiao Xiao Ma (China); Taniya, Naveen (Indians); Peggy (Taiwan, not my course tho :P)
+Special Mentions: Moran, Ben (Israelies); Angel (Spain); Pepe (Mexico); Patricio (Chile); Xiao Xiao Ma (China); Taniya, Naveen (Indians); Peggy (Taiwan)
 
 ![TLV](img/random/bgu/class.jpg)
 
