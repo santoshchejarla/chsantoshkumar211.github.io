@@ -49,7 +49,7 @@ body {
     font-size: 16px;
     line-height: 1.6;
     overflow-x: hidden;
-    color: #868F9B;
+    color: #333333;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -112,10 +112,18 @@ a:hover, a:focus {
     color: #FFF;
 }
 
-ul, ol {
+ul, ol,p {
     margin: 0;
     padding: 0;
-    list-style: none
+    list-style: none;
+    color:#333;
+}
+
+ul, ol,p:hover {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: #FFF;
 }
 
 /* -- section  -- */
@@ -130,8 +138,8 @@ ul, ol {
 }
 
 .sm-padding {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 
@@ -891,11 +899,13 @@ header {
 
 .pricing:hover:after {
     height: 100%;
+    color: #FFF;
 }
 
 .pricing .price-head {
     position: relative;
     margin-bottom: 20px;
+    color: #FFF;
 }
 
 .pricing .price-title {
@@ -907,7 +917,8 @@ header {
 }
 
 .pricing:hover .price-title {
-    color: #6195FF;
+    color: #FFF;
+    background-color: #354052;
 }
 
 .pricing .price {
@@ -919,6 +930,7 @@ header {
     margin: auto;
     border-radius: 50%;
     border: 2px solid #6195FF;
+    color: #FFF;
 }
 
 .pricing .price h3 {
