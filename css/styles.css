@@ -1,0 +1,578 @@
+@font-face {
+    font-family: "NixieOne";
+    src: url("../fonts/NixieOne.ttf");
+}
+@font-face {
+    font-family: "roboto";
+    src: url("../fonts/Roboto-Light.ttf");
+}
+@font-face {
+   font-family: "austria";
+   src: url("../fonts/Austria.ttf");
+}
+
+body {
+    background: linear-gradient(to right, #FFFFFF, #d4d3d3);
+    background-size: cover;
+  }
+
+.name_desc {
+   left: 0%;
+   width: 50vw;
+   padding: 8vh 0;
+   margin: 0vh auto;
+   position: relative;
+   overflow: hidden;
+   font-family: "NixieOne";
+}
+
+
+.full_name {
+    text-align: center;
+    font-family: "NixieOne";
+    font-size: 3.75em;
+    position: sticky;
+    top: 10%;
+}
+
+
+.description {
+    text-align: center;
+    font-family: "NixieOne";
+    font-size: 1.3em;
+    position: sticky;
+}
+
+hr {
+   height:2px;
+   border-width:0;
+   color:rgb(173, 173, 173);
+   background-color:rgb(173, 173, 173);
+   width: 50%;
+}
+.my_image {
+    width: 20.5vw;
+    max-width: 21vw;
+    height:auto;
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+}
+
+
+
+.about {
+   font-family: "roboto";
+   font-size: 1.7em;
+   margin-left: 30% ;
+   max-width: 40%;
+   text-align: justify;
+}
+
+.about hr {
+   height:2px;
+   border-width:0;
+   color:rgb(173, 173, 173);
+   background-color:rgb(173, 173, 173);
+   width: 50%;
+   /* margin-left: 30%; */
+}
+.social {
+   font-size: 0.8em;
+   margin-left: 12.5%;
+   margin-top: 7%;
+}
+
+
+.fa {
+   background: #000000;
+   color: white;
+   padding: 1.5%;
+   margin-left: 1em;
+   margin-top: 0.8em;
+ }
+
+ .fa:hover {
+   opacity: 0.7;
+}
+
+ .ai {
+   background: #000000;
+   color: white;
+   padding: 1.5%;
+   margin-left: 1em;
+ }
+
+
+ .ai:hover {
+   opacity: 0.7;
+}
+
+.journey_h1{
+   font-family: "NixieOne";
+   text-align: center;
+   font-size: 2em;
+}
+
+.journey_hr {
+   width: 5vw;
+}
+
+
+
+@media (max-width: 480) { 
+   .my_image {
+      width: 20.5vw;
+      max-width: 21vw;
+      height:auto;
+      position: fixed;
+      right: 0px;
+      bottom: 0px;
+   } 
+
+   .full_name {
+      text-align: center;
+      font-family: "NixieOne";
+      font-size: 3.75em;
+      position: sticky;
+      top: 10%;
+  }
+
+   .about {
+      font-family: "roboto";
+      font-size: 1.7em;
+      margin-left: 30% ;
+      max-width: 40%;
+      text-align: justify;
+   }
+
+   .about hr {
+      height:2px;
+      border-width:0;
+      color:rgb(173, 173, 173);
+      background-color:rgb(173, 173, 173);
+      width: 50%;
+      /* margin-left: 30%; */
+   }
+   .social {
+      font-size: 0.8em;
+      margin-left: 12.5%;
+      margin-top: 7%;
+   }
+}
+
+@media (max-width: 768px) { 
+   .my_image {
+      width: 20.5vw;
+      max-width: 21vw;
+      height:auto;
+      position: fixed;
+      right: 0px;
+      bottom: 0px;
+   } 
+
+   .full_name {
+      text-align: center;
+      font-family: "NixieOne";
+      font-size: 12vw;
+      position: sticky;
+      top: 10%;
+  }
+
+   .description {
+      text-align: center;
+      font-family: "NixieOne";
+      font-size: 6vw;
+      position: sticky;
+   }
+
+   .about {
+      font-family: "roboto";
+      font-size: 1.7em;
+      margin-left: 30% ;
+      max-width: 40%;
+      text-align: justify;
+   }
+   
+   .about hr {
+      height:2px;
+      border-width:0;
+      color:rgb(173, 173, 173);
+      background-color:rgb(173, 173, 173);
+      width: 50%;
+      /* margin-left: 30%; */
+   }
+   .social {
+      font-size: 0.8em;
+      margin-left: 12.5%;
+      margin-top: 7%;
+   }
+}
+@media (max-width: 1024px) { 
+   .my_image {
+      width: 20.5vw;
+      max-width: 21vw;
+      height:auto;
+      position: fixed;
+      right: 0px;
+      bottom: 0px;
+   } 
+
+   .full_name {
+      text-align: center;
+      font-family: "NixieOne";
+      font-size: 12vw;
+      position: sticky;
+      top: 10%;
+  }
+
+   .description {
+      text-align: center;
+      font-family: "NixieOne";
+      font-size: 6vw;
+      position: sticky;
+   }
+
+   .about {
+      font-family: "roboto";
+      font-size: 1.7em;
+      margin-left: 30% ;
+      max-width: 40%;
+      text-align: justify;
+   }
+   
+   .about hr {
+      height:2px;
+      border-width:0;
+      color:rgb(173, 173, 173);
+      background-color:rgb(173, 173, 173);
+      width: 50%;
+      /* margin-left: 30%; */
+   }
+   .social {
+      font-size: 0.8em;
+      margin-left: 12.5%;
+      margin-top: 7%;
+   }
+}
+@media (max-width: 1200px) { 
+   .name_desc {
+      left: 1%;
+      width: 86vw;
+      padding: 8vh 0;
+      margin: -7vh auto;
+      position: relative;
+      overflow: hidden;
+      font-family: "NixieOne";
+   }
+   .my_image {
+      width: 40vw;
+      max-width: 40vw;
+      height: auto;
+      position: fixed;
+      right: 0px;
+      bottom: 0px;
+   } 
+
+   .full_name {
+      text-align: left;
+      font-family: "NixieOne";
+      font-size: 17vw;
+      position: sticky;
+      margin-left: -1vw;
+      margin-top: 4vh;
+      max-width: 73vw;
+  }
+
+   .description {
+      text-align: left;
+      font-family: "NixieOne";
+      font-size: 7vw;
+      position: sticky;
+      margin-top: 18vh;
+      max-width: 46vw;
+   }
+
+   .about {
+      font-family: "roboto";
+      font-size: 5vw;
+      margin-left: 6vw ;
+      max-width: 50%;
+      text-align: left;
+   }
+   
+   .about hr {
+      height:2px;
+      border-width:0;
+      color:rgb(173, 173, 173);
+      background-color:rgb(173, 173, 173);
+      width: 50%;
+      /* margin-left: 30%; */
+   }
+   .social {
+      font-size: 4vw;
+      margin-left: 0%;
+      margin-top: 7%;
+   }
+   .fa {
+      background: #000000;
+      color: white;
+      padding: 1.5%;
+      margin-left: 1em;
+      margin-top: 0.8em;
+    }
+   
+    .fa:hover {
+      opacity: 0.7;
+   }
+   
+    .ai {
+      background: #000000;
+      color: white;
+      padding: 1.5%;
+      margin-left: 1em;
+      margin-top: 0.8em;
+    }
+   
+   
+    .ai:hover {
+      opacity: 0.7;
+   }
+   
+   .journey_h1{
+      font-size: 2em;
+   }
+   
+}
+@media (min-width: 1201px) { 
+   .my_image {
+      width: 20.5vw;
+      max-width: 21vw;
+      height:auto;
+      position: fixed;
+      right: 0px;
+      bottom: 0px;
+   } 
+
+   .full_name {
+    text-align: center;
+    font-family: "NixieOne";
+    font-size: 3.75em;
+    position: sticky;
+    top: 10%;
+   } 
+
+   .about {
+      font-family: "roboto";
+      font-size: 1.7em;
+      margin-left: 30% ;
+      max-width: 40%;
+      text-align: justify;
+   }
+   
+   .about hr {
+      height:2px;
+      border-width:0;
+      color:rgb(173, 173, 173);
+      background-color:rgb(173, 173, 173);
+      width: 50%;
+      /* margin-left: 30%; */
+   }
+   .social {
+      font-size: 0.8em;
+      margin-left: 12.5%;
+      margin-top: 7%;
+   }
+}
+
+@media (min-width: 1600px) { 
+   .my_image {
+      width: 20.5vw;
+      max-width: 20.5vw;
+      height:auto;
+      position: fixed;
+      right: 0px;
+      bottom: 0px;
+   } 
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+ }
+ 
+.center-con {
+   display: flex;
+   height: 15vh;
+   align-items: center;
+   justify-content: center;
+}
+
+.round {
+   position: relative;
+   border: 0px solid rgb(128, 128, 128);
+   width: 100px;
+   height: 100px;
+   border-radius: 100%;
+}
+
+.round span {
+   z-index: 999;
+   height: 3px;
+   margin:1px;
+   width: 30px;
+   background: rgb(128, 128, 128);
+   transition: 0.4s ease;
+}
+
+.round span:first-child {
+   display: block;
+   position: absolute;
+   transform: rotate(45deg);
+   left: 25%;
+   bottom: 35%;
+}
+
+.round span:nth-child(2) {
+   display: block;
+   position: absolute;
+   transform: rotate(-45deg);
+   left: 45%;
+   bottom: 35%;
+}
+
+.round span:nth-child(3) {
+   display: block;
+   position: absolute;
+   transform: rotate(45deg);
+   left: 25%;
+   bottom: 54%;
+}
+
+.round span:nth-child(4) {
+   display: block;
+   position: absolute;
+   transform: rotate(-45deg);
+   left: 45%;
+   bottom: 54%;
+}
+
+.round:hover span:nth-child(1) {
+   transform: rotate(-135deg);
+}
+
+.round:hover span:nth-child(2) {
+   transform: rotate(135deg);
+}
+
+.round:hover span:nth-child(3) {
+   transform: rotate(225deg);
+}
+
+.round:hover span:nth-child(4) {
+   transform: rotate(-225deg);
+}
+
+ .container {
+    left: -20%;
+    width: 50%;
+    padding: 0em 0;
+    margin: 1em auto;
+    position: relative;
+    overflow: hidden;
+ }
+ 
+ .container:before {
+    content: '';
+    position: absolute;
+    top: 1em;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -1px;
+    width: 2px;
+    height: 100%;
+    background: #CCD1D9;
+    z-index: 1
+ }
+ 
+ .timeline-block {
+    width: -webkit-calc(24vw + 0.95vw);
+    width: -moz-calc(24vw + 0.95vw);
+    width: calc(24vw + 0.95vw);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    justify-content: space-between;
+    clear: both;
+ }
+ 
+ .timeline-block-right {
+    float: right;
+ }
+ 
+ .timeline-block-left {
+    float: left;
+    direction: rtl
+ }
+ 
+ .marker {
+    width: 0.7vw;
+    height: 0.7vw;
+    border-radius: 50%;
+    border: 0vw solid #F5F7FA;
+    background: #525252;
+    margin-top: 10px;
+    z-index: 9999;
+ }
+ 
+ .timeline-content {
+    width: 95%;
+    padding: 0 15px;
+    color: rgb(0, 0, 0);
+    font-family: "NixieOne";
+ }
+ 
+ .timeline-content h3 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 25px;
+    font-weight: 500
+ }
+ 
+ .timeline-content span {
+    font-size: 15px;
+    color: #363636;
+ }
+ 
+ .timeline-content p {
+    font-size: 1em;
+    line-height: 1.5em;
+    word-spacing: 1px;
+    color: rgb(0, 0, 0);
+ }
+ 
+ 
+ @media screen and (max-width: 768px) {
+    .container:before {
+       left: 8px;
+       width: 2px;
+    }
+    .timeline-block {
+       width: 100%;
+       margin-bottom: 30px;
+    }
+    .timeline-block-right {
+       float: none;
+    }
+ 
+    .timeline-block-left {
+       float: none;
+       direction: ltr;
+    }
+ }
