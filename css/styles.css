@@ -385,6 +385,47 @@ hr {
    }
 }
 
+@media (min-width: 1440px) { 
+   .my_image {
+      width: 20.5vw;
+      max-width: 21vw;
+      height:auto;
+      position: fixed;
+      right: 0px;
+      bottom: 0px;
+   } 
+
+   .full_name {
+    text-align: center;
+    font-family: "NixieOne";
+    font-size: 3.75em;
+    position: sticky;
+    top: 10%;
+   } 
+
+   .about {
+      font-family: "roboto";
+      font-size: 1.7em;
+      margin-left: 30% ;
+      max-width: 40%;
+      text-align: justify;
+   }
+   
+   .about hr {
+      height:2px;
+      border-width:0;
+      color:rgb(173, 173, 173);
+      background-color:rgb(173, 173, 173);
+      width: 50%;
+      /* margin-left: 30%; */
+   }
+   .social {
+      font-size: 0.8em;
+      margin-left: 0%;
+      margin-top: 7%;
+   }
+}
+
 @media (min-width: 1600px) { 
    .my_image {
       width: 20.5vw;
@@ -393,7 +434,12 @@ hr {
       position: fixed;
       right: 0px;
       bottom: 0px;
-   } 
+   }
+   .social {
+      font-size: 0.8em;
+      margin-left: 10%;
+      margin-top: 7%;
+   }
 }
 
 * {
