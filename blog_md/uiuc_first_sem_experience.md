@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="../css/sem1.css">
 <h2>My First semester experience at UIUC as an International Student</h2>
 
-*"Navigating a new culture and environment can be both exciting and challenging, but with the support of friends and a willingness to try new things, the journey can lead to personal and academic growth."*
+*"Navigating a new culture and environment can be both exciting and challenging, but with the support of family, friends and a willingness to try new things, the journey can lead to personal and academic growth."*
 
 As an international student from India, my first semester at the University of Illinois at Urbana-Champaign (UIUC) was filled with a mix of excitement and challenges.
 
@@ -143,7 +143,5 @@ As I look ahead to the future, I am filled with both excitement and determinatio
 
 I am grateful for the experiences and growth I've had so far in my first semester at UIUC and am eager to build upon that foundation. I look forward to exploring more of Champaign-Urbana, making new friends, and discovering all that this amazing institution has to offer.
 
-<br>
-<br>
 <br>
 
