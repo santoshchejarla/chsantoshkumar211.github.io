@@ -1,4 +1,3 @@
-
 <link rel="stylesheet" href="../css/sem1.css">
 <h2>My First Semester Experience at UIUC as an International Student</h2>
 
