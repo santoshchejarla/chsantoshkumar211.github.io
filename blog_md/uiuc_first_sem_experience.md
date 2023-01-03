@@ -49,7 +49,7 @@ During my first semester at UIUC, I had the opportunity to try a variety of loca
     - BBQ Chicken: 3.5/5
 - Mexican:
     - Chipotle: 3/5
-    - Maize at Illinoi Terminal: 2.5/5
+    - Maize at Illinois Terminal: 2.5/5
 - Mediterranean:
     - Shawarma joint: 4/5 - This restaurant was a great find, with delicious and authentic Mediterranean food. The portion sizes were generous and the prices were reasonable.
     - Dubai Grill: 3.25/5 - This restaurant was a good option for Mediterranean food, with a variety of dishes available. The food was flavorful, but the portion sizes were on the small side.
