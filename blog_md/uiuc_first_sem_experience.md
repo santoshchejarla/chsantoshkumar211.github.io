@@ -46,13 +46,13 @@ During my first semester at UIUC, I had the opportunity to try a variety of loca
     - Panda express: 3.5/5 - Panda express was a convenient and reliable option for Chinese food.
     - Chinatown: 0.5/5 - Just dont go there.
 - Korean:
-    - BBQ Chicken: 3.5/5 - Highly depends on what you order.
+    - BBQ Chicken: 3.5/5
 - Mexican:
     - Chipotle: 3/5
     - Maize at Illinoi Terminal: 2.5/5
 - Mediterranean:
     - Shawarma joint: 4/5 - This restaurant was a great find, with delicious and authentic Mediterranean food. The portion sizes were generous and the prices were reasonable.
-    - Dubai Grill: 3.25/5 - his restaurant was a good option for Mediterranean food, with a variety of dishes available. The food was flavorful, but the portion sizes were on the small side.
+    - Dubai Grill: 3.25/5 - This restaurant was a good option for Mediterranean food, with a variety of dishes available. The food was flavorful, but the portion sizes were on the small side.
 - American:
     - Chick-fil-A: 3.5/5 - This chain restaurant offered a good selection of American fast food, with reasonable prices and decent portion sizes. The food was generally tasty and satisfying.
 - Boba-Tea:
