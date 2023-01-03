@@ -36,10 +36,10 @@ Another thing that really annoyed me was the fact that chicken seemed to be rare
 During my first semester at UIUC, I had the opportunity to try a variety of local restaurants and cafes that offered a range of cuisines. Here is a more detailed breakdown of my ratings for some of the places I visited:
 
 - Dining Halls:
-    - ISR: 3.25/5 (best dining hall for Indians) - The ISR dining hall was my go-to place for meals during my first semester at UIUC. While the food was not always particularly good, it was convenient and provided a good variety of options, including Indian food at least once a week.
+    - ISR: 3.25/5 - The ISR dining hall was my go-to place for meals during my first semester at UIUC. While the food was not always particularly good, it was convenient and provided a good variety of options, including Indian food at least once a week.
     - IKE: 3/5 - IKE dining hall was another option for meals, but I found the food to be less satisfying compared to ISR.
 - Indian:
-    - Himalayan Chimney: 3.5/5 (best restaurant for Indians) - Himalayan Chimney was my favorite Indian restaurant around UIUC, with good food and a cozy atmosphere.
+    - Himalayan Chimney: 3.5/5 - Himalayan Chimney was my favorite Indian restaurant around UIUC, with good food and a cozy atmosphere.
     - Signature Grill: 3.25/5 (best restaurant for sount Indians) - Signature Grill was another good Indian restaurant, with a focus on southern Indian cuisine.
     - Kohinoor: 2.25/5 - Kohinoor was a disappointment, with average food and poor service.
     - Ambar: 2.25/5 - Ambar was another disappointment, with poor food and a lack of authenticity.
