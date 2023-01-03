@@ -1,0 +1,108 @@
+.sem1_img {
+    text-align:center;
+    display: block;
+    margin: auto;
+}
+.cover {
+    width: 37vw;
+}
+.sem1_img img {
+    width: 30vw;
+}
+
+.sem1_img_food {
+    display: block;
+}
+
+.sem1_img_food img {
+    width:25vw;
+    float:right;
+    margin-left: 2vw;
+    display: block;
+}
+
+@media (max-width: 786) {
+    .sem1_img img {
+        width:50vw;
+    }
+    .sem1_img_food img {
+        width:25vw;
+        float:right;
+        margin-left: 2vw;
+    }
+    .sem1_img_food {
+        display: block;
+    }
+    .sem1_img_food img {
+        width: 55vw;
+        display: block;
+        margin-left: 2vw;
+        float: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .sem1_img img {
+        width:50vw;
+    }
+    .sem1_img_food {
+        display: block;
+    }
+    .sem1_img_food img {
+        width: 55vw;
+        display: block;
+        margin-left: 2vw;
+        float: none;
+    }
+ }
+ 
+ @media (max-width: 768px) { 
+    .sem1_img img {
+        width:50vw;
+    }
+    .sem1_img_food {
+        display: block;
+    }
+    .sem1_img_food img {
+        width: 55vw;
+        display: block;
+        margin-left: 2vw;
+        float: none;
+    }
+ }
+ 
+ @media (max-width: 1024px) { 
+    .sem1_img img {
+        width: 55vw;
+    }
+    .sem1_img_food {
+        display: block;
+    }
+    .sem1_img_food img {
+        width:55vw;
+        display: block;
+        margin-left: 2vw;
+    }
+ }
+ 
+ @media (max-width: 1200px) {
+    .sem1_img img {
+        width: 80vw;
+        margin-left: 10vw;
+    }
+    .sem1_img_food {
+        display: block;
+        text-align: center;
+    }
+    .sem1_img_food img {
+        width: 45vw;
+        display: block;
+        margin-left: 10vw;
+        float: none;
+    }
+    .cover {
+        width: 65vw;
+    }
+
+ }
+
