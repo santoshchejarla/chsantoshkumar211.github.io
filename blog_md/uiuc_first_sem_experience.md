@@ -1,6 +1,6 @@
 
 <link rel="stylesheet" href="../css/sem1.css">
-<h2>My First semester experience at UIUC as an International Student</h2>
+<h2>My First Semester Experience at UIUC as an International Student</h2>
 
 *"Navigating a new culture and environment can be both exciting and challenging, but with the support of family, friends and a willingness to try new things, the journey can lead to personal and academic growth."*
 
@@ -14,13 +14,13 @@ Overall, my first semester at UIUC was a learning experience that helped me to g
 
 <h3>1. Adjusting to a New Culture</h3>
 
-*<b>Iced Water</b>* : One of the most surprising cultural shocks was iced water. In my home country of India, it is not common to drink cold water, especially during the winter months. We typically drink warm or room temperature water, and it is believed that cold water can disrupt digestion and weaken the immune system. However, upon arriving in the United States, I quickly learned that iced water is a staple at almost every restaurant and cafe. It is also common for people to drink cold water at home and at work.
+*<b>Iced Water</b>*: One of the most surprising cultural shocks was iced water. In my home country of India, it is not common to drink cold water, especially during the winter months. We typically drink warm or room temperature water, and it is believed that cold water can disrupt digestion and weaken the immune system. However, upon arriving in the United States, I quickly learned that iced water is a staple at almost every restaurant and cafe. It is also common for people to drink cold water at home and at work.
 
-*<b>Food lables</b>* : Another cultural shock was the lack of food labeling as "veg" or "non-veg." In India, it is common for people to follow a vegetarian or non-vegetarian diet, and food products are often labeled as such to make it easier for people to make informed choices about what they eat. This is especially important for those who have dietary restrictions or who follow a specific dietary lifestyle, such as vegetarianism or veganism.
+*<b>Food lables</b>*: Another cultural shock was the lack of food labeling as "veg" or "non-veg." In India, it is common for people to follow a vegetarian or non-vegetarian diet, and food products are often labeled as such to make it easier for people to make informed choices about what they eat. This is especially important for those who have dietary restrictions or who follow a specific dietary lifestyle, such as vegetarianism or veganism.
 
 The lack of this labeling in the United States made it more difficult for me to determine which foods were suitable for my dietary preferences. I had to rely on ingredient lists and other information provided on packaging to make informed decisions about what to eat. While this was not necessarily a major challenge, it was something that I had to adjust to and became more mindful of as I shopped for food in my new environment.
 
-*<b>No concept of MRP</b>* : I was surprised to find that many products in the United States do not have a visible price tag. In India, it is mandatory for all products to have a Maximum Retail Price (MRP), which is the highest price at which a product can be sold. This ensures that consumers are not overcharged and can easily compare prices between different retailers.
+*<b>No concept of MRP</b>*: I was surprised to find that many products in the United States do not have a visible price tag. In India, it is mandatory for all products to have a Maximum Retail Price (MRP), which is the highest price at which a product can be sold. This ensures that consumers are not overcharged and can easily compare prices between different retailers.
 
 
 <h3>2. Food</h3>
