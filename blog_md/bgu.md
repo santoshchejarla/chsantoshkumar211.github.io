@@ -1,3 +1,4 @@
+ <h2>Summer School at Ben-Gurion University of the Negev, Israel.</h2>
 
 _Sometimes we need to look beyond what we believe exists and what is possible for ourselves. We can do this by allowing ourselves to open our eyes to new possibilities._
 

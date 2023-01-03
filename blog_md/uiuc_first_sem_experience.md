@@ -1,5 +1,6 @@
 
 <link rel="stylesheet" href="../css/sem1.css">
+<h2>My First Semester Experience at UIUC as an International Student</h2>
 
 *"Navigating a new culture and environment can be both exciting and challenging, but with the support of family, friends and a willingness to try new things, the journey can lead to personal and academic growth."*
 
