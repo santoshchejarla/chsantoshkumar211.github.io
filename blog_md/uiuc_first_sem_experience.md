@@ -59,7 +59,7 @@ During my first semester at UIUC, I had the opportunity to try a variety of loca
     - Kung Fu Tea - 3.75/5 - This cafe offered strong tea with a good milk to water ratio. The boba tea was delicious and the prices were reasonable.
     - Moge Tea: 3.75/5 - This cafe also offered strong tea with a good milk to water ratio. The boba tea was tasty and the prices were reasonable.
     - Latea: 3.75 - This cafe offered strong tea with more water than milk. The boba tea was still enjoyable, but not as rich as some of the other options.
-    - Tigersugar: 3.5/5 - This cafe offered a range of boba tea flavors, with a good balance of tea and milk. The prices are very high copared to others, but the quality was good.
+    - Tigersugar: 3.5/5 - This cafe offered limited number of boba tea flavors, with a good balance of tea and milk. The prices are very high compared to others, but the quality was good.
     - Teamoji: 3.5/5 - This cafe offered a variety of boba tea flavors, with a focus on lighter teas and more milk than water. The prices were reasonable and the quality was good.
 - Latte:
     - Starbucks at Illini Union: 2.5/5
