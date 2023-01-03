@@ -33,7 +33,7 @@ There were a few things that really annoyed me during my first semester at UIUC.
 
 Another thing that really annoyed me was the fact that chicken seemed to be rarely fresh. In India, it is common to purchase and consume fresh, locally-raised chicken, and I was used to the taste and quality of fresh chicken. However, in the United States, I found that chicken was often pre-packaged and seemed to be less fresh than what I was used to. This was disappointing, as chicken is a staple protein in my diet, and I rely on it for nutrition.
 
-During my first semester at UIUC, I had the opportunity to try a variety of local restaurants and cafes that offered a range of cuisines. Here is a more detailed breakdown of my ratings for some of the places I visited:
+During my first semester at UIUC, I had the opportunity to try a variety of local restaurants and cafes that offered a range of cuisines. Here is a more detailed breakdown of my ratings for some of the places I visited (All of the ratings provided are based on my own personal opinion and should be taken as such.):
 
 - Dining Halls:
     - ISR: 3.25/5 - The ISR dining hall was my go-to place for meals during my first semester at UIUC. While the food was not always particularly good, it was convenient and provided a good variety of options, including Indian food at least once a week.
@@ -68,7 +68,7 @@ During my first semester at UIUC, I had the opportunity to try a variety of loca
     - McDonalds McCafe: 1.5/5
     - InfiniTea at ISR: 2.5/5
 
-
+I cannot accurately comment on Mexican and Korean food as I have not had the opportunity to try authentic versions of these cuisines. However, I have included ratings for these types of food based on how well they suited my Indian palate.
 
 I tried a variety of food and drinks, but boba tea quickly became my favorite. It's a drink that I continue to enjoy and look forward to experiencing more of in the future.
 
